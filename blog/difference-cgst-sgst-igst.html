@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CGST vs SGST vs IGST - Understanding the differences between Central GST, State GST, and Integrated GST.">
+  <meta property="og:title" content="CGST vs SGST vs IGST - InvoiceBana Blog">
+  <link rel="canonical" href="https://invoicebana.vercel.app/blog/difference-cgst-sgst-igst.html">
+  <title>CGST vs SGST vs IGST - InvoiceBana Blog</title>
+  <link rel="stylesheet" href="../css/style.css?v=1.4">
+
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg?v=1.1">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-logo"><img src="../favicon.svg?v=1.1" alt="Logo" class="logo-icon"> InvoiceBana</div>
+        <button class="navbar-toggle">☰</button>
+        <ul class="navbar-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../gst-calculator.html">GST Calculator</a></li>
+          <li><a href="../hsn-finder.html">HSN Finder</a></li>
+          <li><a href="./" class="active">Blog</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <article>
+        <h1>CGST vs SGST vs IGST: Key Differences</h1>
+        <p class="text-muted">Published on January 2025 • 8 min read</p>
+
+        <h2>Introduction</h2>
+        <p>One of the most confusing aspects of GST for new business owners is understanding the three types of taxes: CGST, SGST, and IGST. While they seem complicated, the concept is actually straightforward once you understand how the Indian federal system works.</p>
+
+        <h2>The Three Types of GST</h2>
+        <h4>1. CGST (Central Goods and Services Tax)</h4>
+        <p>CGST is the GST collected by the <strong>Central Government</strong>. When you make a sale within your state, the Central Government collects a portion of the GST.</p>
+
+        <h4>2. SGST (State Goods and Services Tax)</h4>
+        <p>SGST is the GST collected by the <strong>State Government</strong>. When you make a sale within your state, the State Government collects its portion of the GST.</p>
+
+        <h4>3. IGST (Integrated Goods and Services Tax)</h4>
+        <p>IGST is the <strong>combined tax</strong> collected for inter-state transactions. When you sell to another state, the entire GST is collected by the Central Government as IGST.</p>
+
+        <h2>When to Use Which Tax?</h2>
+        <h4>Use CGST + SGST When:</h4>
+        <ul style="margin-left: 2rem; line-height: 1.8;">
+          <li>Seller and buyer are in the <strong>same state</strong></li>
+          <li>You're selling goods or services within your state</li>
+          <li>This is called <strong>Intra-State Supply</strong></li>
+          <li>Example: A Delhi business selling to another Delhi business</li>
+        </ul>
+
+        <h4>Use IGST When:</h4>
+        <ul style="margin-left: 2rem; line-height: 1.8;">
+          <li>Seller and buyer are in <strong>different states</strong></li>
+          <li>You're selling goods or services to another state</li>
+          <li>This is called <strong>Inter-State Supply</strong></li>
+          <li>Example: A Delhi business selling to a Mumbai business</li>
+        </ul>
+
+        <h2>How CGST and SGST Split the Tax</h2>
+        <p>In intra-state transactions, the GST rate is split equally between CGST and SGST:</p>
+        <ul style="margin-left: 2rem;">
+          <li><strong>5% GST rate:</strong> 2.5% CGST + 2.5% SGST</li>
+          <li><strong>12% GST rate:</strong> 6% CGST + 6% SGST</li>
+          <li><strong>18% GST rate:</strong> 9% CGST + 9% SGST</li>
+          <li><strong>28% GST rate:</strong> 14% CGST + 14% SGST</li>
+        </ul>
+
+        <h2>Practical Examples</h2>
+        <h4>Example 1: Intra-State Supply (CGST + SGST)</h4>
+        <p><strong>Scenario:</strong> A fabric shop in Delhi sells cotton cloth worth ₹1,000 to a tailor in Delhi. GST rate is 12%.</p>
+        <ul style="margin-left: 2rem;">
+          <li>Base Amount: ₹1,000</li>
+          <li>CGST (6%): ₹60 (goes to Central Government)</li>
+          <li>SGST (6%): ₹60 (goes to Delhi State Government)</li>
+          <li>Total GST: ₹120</li>
+          <li><strong>Customer pays: ₹1,120</strong></li>
+        </ul>
+
+        <h4>Example 2: Inter-State Supply (IGST)</h4>
+        <p><strong>Scenario:</strong> The same Delhi fabric shop sells the same ₹1,000 cloth to a tailor in Mumbai. GST rate is 12%.</p>
+        <ul style="margin-left: 2rem;">
+          <li>Base Amount: ₹1,000</li>
+          <li>IGST (12%): ₹120 (goes to Central Government)</li>
+          <li>No CGST or SGST</li>
+          <li><strong>Customer pays: ₹1,120</strong></li>
+        </ul>
+
+        <h2>GST Collection and Remittance</h2>
+        <h4>For Intra-State Sales:</h4>
+        <p>As a seller, you collect both CGST and SGST from your customer. At the time of filing GSTR-1 (monthly return), you report:</p>
+        <ul style="margin-left: 2rem;">
+          <li>Total CGST collected (which you'll eventually remit to Central Government)</li>
+          <li>Total SGST collected (which you'll eventually remit to State Government)</li>
+        </ul>
+
+        <h4>For Inter-State Sales:</h4>
+        <p>You collect only IGST from the customer, which is remitted entirely to the Central Government.</p>
+
+        <h2>GST Refunds and Input Tax Credit</h2>
+        <h4>How Input Tax Credit Works</h4>
+        <p>One of the key benefits of GST is Input Tax Credit (ITC). If you purchase goods/services with GST, you can claim the GST paid as credit.</p>
+
+        <h4>ITC for Intra-State Purchases:</h4>
+        <p>If you purchase goods in your state, you claim both CGST and SGST as credit.</p>
+
+        <h4>ITC for Inter-State Purchases:</h4>
+        <p>If you purchase goods from another state, you claim IGST as credit.</p>
+
+        <h2>Small Example with ITC</h2>
+        <p><strong>Scenario:</strong> Delhi retailer buys ₹1,000 cloth (12% GST) and sells for ₹2,000 (12% GST). Same state transaction.</p>
+        <ul style="margin-left: 2rem; line-height: 1.8;">
+          <li>Purchase: ₹1,000 + ₹120 GST (₹60 CGST + ₹60 SGST) = ₹1,120</li>
+          <li>Sale: ₹2,000 + ₹240 GST (₹120 CGST + ₹120 SGST) = ₹2,240</li>
+          <li>GST Payable = GST Collected - GST Paid = ₹240 - ₹120 = ₹120</li>
+          <li>CGST Payable: ₹120 - ₹60 = ₹60</li>
+          <li>SGST Payable: ₹120 - ₹60 = ₹60</li>
+        </ul>
+
+        <h2>Key Differences Summary Table</h2>
+        <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+          <thead style="background-color: var(--primary); color: white;">
+            <tr>
+              <th style="padding: 0.75rem; text-align: left; border: 1px solid #ddd;">Feature</th>
+              <th style="padding: 0.75rem; text-align: left; border: 1px solid #ddd;">CGST/SGST</th>
+              <th style="padding: 0.75rem; text-align: left; border: 1px solid #ddd;">IGST</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #f9f9f9;">
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">When Used</td>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">Intra-state (same state)</td>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">Inter-state (different states)</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">Tax Distribution</td>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">Split between Central & State</td>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">All to Central Government</td>
+            </tr>
+            <tr style="background-color: #f9f9f9;">
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">Number of Taxes</td>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">Two (CGST + SGST)</td>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">One (IGST)</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">Rate Split</td>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">50% each</td>
+              <td style="padding: 0.75rem; border: 1px solid #ddd;">100% combined</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Common Mistakes to Avoid</h2>
+        <ul style="margin-left: 2rem; line-height: 1.8;">
+          <li>Confusing intra-state with inter-state transactions</li>
+          <li>Using IGST for same-state supplies</li>
+          <li>Incorrectly calculating CGST and SGST split</li>
+          <li>Forgetting to adjust for ITC when calculating final GST payable</li>
+          <li>Not checking buyer's state before determining which tax to apply</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>While CGST, SGST, and IGST might seem confusing, the logic is simple: same state = split tax (CGST + SGST), different states = combined tax (IGST). Use InvoiceBana's invoice generator, which automatically detects whether your transaction is intra or inter-state and applies the correct taxes.</p>
+
+        <div class="alert alert-info" style="margin-top: 2rem;">
+          <p><strong>💡 Tip:</strong> InvoiceBana automatically calculates whether to use CGST+SGST or IGST based on seller and buyer state. No more confusion!</p>
+        </div>
+      </article>
+
+      <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+        <p style="text-align: center;"><a href="./" class="btn btn-primary">← Back to Blog</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>InvoiceBana</h3>
+          <p>Free GST tools for every Indian business.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="../index.html">Invoice Generator</a>
+          <a href="../gst-calculator.html">GST Calculator</a>
+          <a href="../hsn-finder.html">HSN Finder</a>
+          <a href="./">Blog</a>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="../about.html">About Us</a>
+          <a href="../privacy-policy.html">Privacy Policy</a>
+          <a href="../disclaimer.html">Disclaimer</a>
+          <a href="../contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 InvoiceBana. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/nav.js"></script>
+</body>
+</html>

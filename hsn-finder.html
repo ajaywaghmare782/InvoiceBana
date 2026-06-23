@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free HSN/SAC Code Finder - Search 200+ product and service codes with GST rates. Find the correct HSN code for your business.">
+  <meta property="og:title" content="HSN Code Finder - InvoiceBana">
+  <meta property="og:description" content="Free HSN/SAC Code Finder - Search codes with GST rates.">
+  <meta property="og:image" content="/assets/og-image.png">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://invoicebana.vercel.app/hsn-finder.html">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <title>HSN/SAC Code Finder - InvoiceBana</title>
+  <link rel="stylesheet" href="css/style.css?v=1.4">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.1">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar-logo"><img src="favicon.svg?v=1.1" alt="Logo" class="logo-icon"> InvoiceBana</div>
+        <button class="navbar-toggle">☰</button>
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gst-calculator.html">GST Calculator</a></li>
+          <li><a href="hsn-finder.html" class="active">HSN Finder</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="section" style="background-color: var(--primary); color: white;">
+    <div class="container">
+      <div style="text-align: center;">
+        <h1 style="color: white; margin-bottom: 1rem;">HSN/SAC Code Finder</h1>
+        <p style="font-size: 1.2rem;">Search 200+ product and service codes with their GST rates</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Ad Slot -->
+  <div class="container" style="margin-top: 2rem;">
+    <div class="ad-container">
+      <!-- AdSense Code will be loaded here dynamically by Google -->
+    </div>
+  </div>
+
+  <!-- Finder Tool -->
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <div class="card">
+        <h2 class="text-center mb-3">Find HSN/SAC Code</h2>
+        
+        <div class="form-group">
+          <label for="hsnSearch">Search by Product Name or HSN Code</label>
+          <input type="text" id="hsnSearch" placeholder="E.g., cotton fabric, 5208, dairy, services...">
+        </div>
+
+        <div id="hsnResults" style="margin-top: 1.5rem;"></div>
+      </div>
+
+      <!-- Info Section -->
+      <div class="card mt-4">
+        <h3>What is HSN Code?</h3>
+        <p>HSN (Harmonized System of Nomenclature) is an international system of names and numbers for classifying goods. In India, it's used to determine which GST rate applies to a product. Every product has a unique HSN code.</p>
+
+        <h4 style="margin-top: 1.5rem;">Who Needs to Use HSN Code?</h4>
+        <p><strong>Goods Traders (Turnover > ₹5 Crore):</strong> Compulsory to mention HSN codes on invoices.</p>
+        <p><strong>Service Providers (Turnover > ₹20 Lakh):</strong> Must use SAC (Service Accounting Code) instead of HSN.</p>
+        <p><strong>Others:</strong> Optional but recommended for clarity and GST compliance.</p>
+
+        <h4 style="margin-top: 1.5rem;">Understanding HSN Structure</h4>
+        <p>HSN codes can be 2, 4, 6, or 8 digits:</p>
+        <ul style="margin-left: 2rem;">
+          <li><strong>2 digits:</strong> Chapter (broad category)</li>
+          <li><strong>4 digits:</strong> Heading (sub-category)</li>
+          <li><strong>6 digits:</strong> Sub-heading (more specific)</li>
+          <li><strong>8 digits:</strong> Tariff item (most specific)</li>
+        </ul>
+        <p>For example, cotton fabrics fall under Chapter 52 (textiles), heading 5208 (cotton fabrics), etc.</p>
+
+        <h4 style="margin-top: 1.5rem;">How to Find the Correct HSN Code?</h4>
+        <p>1. Search in the list above using the product name or any partial code.</p>
+        <p>2. Check the official <a href="https://www.cbic.gov.in" target="_blank">CBIC (Central Board of Indirect Taxes and Customs) website</a> for comprehensive HSN listings.</p>
+        <p>3. Contact a CA or tax professional for complex products.</p>
+        <p>4. If unsure, use the most general HSN code that applies to your product category.</p>
+
+        <h4 style="margin-top: 1.5rem;">Note:</h4>
+        <p>The HSN codes shown above cover the 200 most common products and services. For rare or specialized items, please check the official CBIC website or consult a tax professional.</p>
+      </div>
+
+      <!-- Bottom Ad Slot -->
+      <div class="ad-container" style="margin-top: 2rem;">
+        <!-- AdSense Code will be loaded here dynamically by Google -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-consent">
+    We use cookies for analytics to improve your experience. 
+    <button class="btn-accept" style="background: var(--accent); color: black; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Accept</button>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>InvoiceBana</h3>
+          <p>Free GST tools for every Indian business.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <a href="index.html">Invoice Generator</a>
+          <a href="gst-calculator.html">GST Calculator</a>
+          <a href="hsn-finder.html">HSN Finder</a>
+          <a href="blog/">Blog</a>
+        </div>
+        <div class="footer-section">
+          <h3>Legal</h3>
+          <a href="about.html">About Us</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 InvoiceBana. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/hsn.js"></script>
+</body>
+</html>
