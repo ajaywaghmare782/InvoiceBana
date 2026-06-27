@@ -1,86 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Tools and Main Pages -->
   <url>
     <loc>https://invoicebana.vercel.app/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/gst-calculator</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/hsn-finder</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  
+  <!-- New Keyword Landing Pages -->
+  <url>
+    <loc>https://invoicebana.vercel.app/invoice-generator</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/gst-invoice-generator</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/free-invoice-generator</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/invoice-maker</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/proforma-invoice-generator</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/invoice-template</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog Home -->
   <url>
     <loc>https://invoicebana.vercel.app/blog</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Existing Blog Posts -->
   <url>
     <loc>https://invoicebana.vercel.app/blog/what-is-gst-invoice</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/blog/gst-invoice-rules-2025</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/blog/difference-cgst-sgst-igst</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/blog/how-to-fill-gstr1</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/blog/gst-invoice-mistakes</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/blog/gst-registration-threshold</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- New Blog Posts -->
+  <url>
+    <loc>https://invoicebana.vercel.app/blog/how-to-create-gst-invoice</loc>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://invoicebana.vercel.app/blog/gst-invoice-format</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/blog/invoice-vs-tax-invoice</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/blog/mandatory-gst-invoice-fields</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/blog/freelancer-invoice-guide</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/blog/small-business-invoice-guide</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/blog/invoice-number-format</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/blog/gst-billing-tips</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://invoicebana.vercel.app/blog/invoice-template-guide</loc>
+    <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal & Static Pages -->
+  <url>
     <loc>https://invoicebana.vercel.app/about</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/contact</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/privacy-policy</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://invoicebana.vercel.app/disclaimer</loc>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-06-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

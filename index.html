@@ -21,7 +21,35 @@
   
   <!-- ADSENSE CODE GOES HERE AFTER APPROVAL -->
   
-  <title>InvoiceBana - Free GST Invoice Generator</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create professional GST invoices online for free. Download PDF invoices instantly. No signup required. Perfect for freelancers and businesses in India.">
+  <meta property="og:title" content="Free GST Invoice Generator for India | Create Professional PDF Invoices | InvoiceBana">
+  <meta property="og:description" content="Create professional GST invoices online for free. Download PDF invoices instantly. No signup required. Perfect for freelancers and businesses in India.">
+  <meta property="og:image" content="https://invoicebana.vercel.app/assets/og-image.png">
+  <meta property="og:url" content="https://invoicebana.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free GST Invoice Generator for India | Create Professional PDF Invoices | InvoiceBana">
+  <meta name="twitter:description" content="Create professional GST invoices online for free. Download PDF invoices instantly. No signup required. Perfect for freelancers and businesses in India.">
+  <meta name="twitter:image" content="https://invoicebana.vercel.app/assets/og-image.png">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://invoicebana.vercel.app/">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <title>Free GST Invoice Generator for India | Create Professional PDF Invoices | InvoiceBana</title>
   <link rel="stylesheet" href="css/style.css?v=1.4">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
@@ -30,39 +58,48 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4551792521922995" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="container">
-      <div class="navbar">
-        <div class="navbar-logo"><img src="favicon.svg?v=1.1" alt="Logo" class="logo-icon"> InvoiceBana</div>
-        <button class="navbar-toggle">☰</button>
-        <ul class="navbar-links">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="gst-calculator.html">GST Calculator</a></li>
-          <li><a href="hsn-finder.html">HSN Finder</a></li>
-          <li><a href="blog/">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="section" style="background-color: var(--primary); color: white;">
-    <div class="container">
-      <div style="text-align: center;">
-        <h1 style="color: white; margin-bottom: 1rem;">Create GST Invoice Free</h1>
-        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">Download PDF Instantly — No Login • No Signup • 100% Free</p>
-        <button class="btn btn-accent" onclick="scrollToElement('#invoice-generator')">Generate Invoice Now ↓</button>
-        <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-          <div>✓ No data stored</div>
-          <div>✓ Works offline</div>
-          <div>✓ GST compliant</div>
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+      <div class="container">
+        <div class="navbar">
+          <a href="/" class="navbar-logo" aria-label="InvoiceBana Home">
+            <img src="favicon.svg?v=1.1" alt="InvoiceBana Logo" class="logo-icon" width="32" height="32"> 
+            InvoiceBana
+          </a>
+          <button class="navbar-toggle" aria-label="Toggle Navigation Menu">☰</button>
+          <ul class="navbar-links">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/gst-calculator">GST Calculator</a></li>
+            <li><a href="/hsn-finder">HSN Finder</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section hero-section" style="background-color: var(--primary); color: white; padding: 60px 0;">
+      <div class="container">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+          <h1 style="color: white; margin-bottom: 0.5rem; font-size: 3rem;">Free GST Invoice Generator</h1>
+          <h2 style="color: rgba(255,255,255,0.9); font-size: 1.8rem; font-weight: 600; margin-bottom: 1rem; border: none;">Create Professional GST Invoices in Seconds</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 1.5rem; opacity: 0.9; line-height: 1.5;">Generate GST-compliant invoices online for free. Download professional PDF invoices instantly without registration.</p>
+          <button class="btn btn-accent" onclick="scrollToElement('#invoice-generator')" aria-label="Generate Invoice Now">Generate Invoice Now ↓</button>
+          <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; font-size: 0.95rem; font-weight: 500;">
+            <div>✓ Made for Indian Businesses</div>
+            <div>✓ GST Ready</div>
+            <div>✓ Secure &amp; Private</div>
+            <div>✓ Free &amp; Fast PDF Download</div>
+            <div>✓ Works on Mobile</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!-- Top Ad Slot -->
   <div class="container" style="margin-top: 2rem;">
@@ -182,13 +219,13 @@
                 <tbody>
                   <tr class="line-item-row">
                     <td>1</td>
-                    <td><input type="text" data-field="description" placeholder="Item description"></td>
-                    <td><input type="text" data-field="hsn" placeholder="HSN/SAC"></td>
-                    <td><input type="number" data-field="qty" placeholder="Qty" min="1" value="1"></td>
-                    <td><input type="text" data-field="unit" placeholder="Unit" value="pc"></td>
-                    <td><input type="number" data-field="rate" placeholder="Rate" min="0" step="0.01"></td>
+                    <td><input type="text" data-field="description" placeholder="Item description" aria-label="Item description"></td>
+                    <td><input type="text" data-field="hsn" placeholder="HSN/SAC" aria-label="HSN or SAC code"></td>
+                    <td><input type="number" data-field="qty" placeholder="Qty" min="1" value="1" aria-label="Quantity"></td>
+                    <td><input type="text" data-field="unit" placeholder="Unit" value="pc" aria-label="Unit"></td>
+                    <td><input type="number" data-field="rate" placeholder="Rate" min="0" step="0.01" aria-label="Rate in Rupees"></td>
                     <td>
-                      <select data-field="gst">
+                      <select data-field="gst" aria-label="GST Percentage">
                         <option value="0">0%</option>
                         <option value="5">5%</option>
                         <option value="12">12%</option>
@@ -197,7 +234,7 @@
                       </select>
                     </td>
                     <td class="line-amount">₹ 0</td>
-                    <td><button type="button" class="btn-remove-item btn-small" onclick="removeLineItem(this)" style="visibility: hidden;">Remove</button></td>
+                    <td><button type="button" class="btn-remove-item btn-small" onclick="removeLineItem(this)" style="visibility: hidden;" aria-label="Remove item">Remove</button></td>
                   </tr>
                 </tbody>
               </table>
@@ -353,124 +390,448 @@
                 <div class="summary-row total">
                   <span>GRAND TOTAL:</span>
                   <span>₹ <span id="previewGrandTotal">0.00</span></span>
-                </div>
+</div>
                 <div class="amount-in-words">
                   Amount in Words: <span id="previewAmountInWords">Rupees Zero Only</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+         </div>
+  </section>
+  </main>
+
+  <!-- Bottom Ad Slot -->
+  <section class="section-ads" aria-label="Advertisements">
+    <div class="container" style="margin-top: 2rem; margin-bottom: 2rem;">
+      <div class="ad-container">
+        <!-- AdSense Code will be loaded here dynamically by Google -->
+      </div>
     </div>
   </section>
 
-  <!-- Bottom Ad Slot -->
-  <div class="container" style="margin-top: 2rem; margin-bottom: -2rem;">
-    <div class="ad-container">
-      <!-- AdSense Code will be loaded here dynamically by Google -->
+  <!-- Section 1: Informative Content -->
+  <section class="section" style="background-color: var(--surface); border-top: 1px solid var(--border);">
+    <div class="container">
+      <div style="max-width: 900px; margin: 0 auto;">
+        <h2 style="margin-bottom: 1.5rem; text-align: center;">What is a GST Invoice Generator?</h2>
+        <p>A <strong>GST Invoice Generator</strong> is an online tool that helps business owners, freelancers, startups, and service providers create invoices that comply with the Goods and Services Tax (GST) laws in India. Under the Indian tax system, any business registered under GST must issue a tax invoice to its customers. A proper tax invoice must detail the value of supply, GST rate, CGST, SGST, IGST amounts, HSN/SAC code, and the GSTIN of both the seller and the buyer.</p>
+        <p>Using an <strong>online invoice generator</strong> simplifies the billing process. Instead of calculating tax rates manually or spending hours on Excel, you can use an <strong>invoice maker</strong> to automate calculations. For example, if you sell goods or services within your state (intra-state transaction), the <strong>GST bill generator</strong> automatically splits the tax into Central GST (CGST) and State GST (SGST). If the transaction is interstate, it calculates the Integrated GST (IGST).</p>
+        <p>For freelancers and small businesses in India, maintaining compliance can be challenging. A digital invoice ensures accuracy and prevents errors in GSTR-1 filings. InvoiceBana provides a <strong>free invoice generator</strong> that handles all of these tax calculations in real-time, right inside your web browser. You can select your state and the buyer's state, and the tool will instantly calculate the correct tax split.</p>
+        <p>By transitioning to digital invoicing, you not only ensure compliance with GST Rule 46 but also enhance your business's professional image. A clean, professional layout builds trust with clients, speeds up payments, and makes bookkeeping seamless. Whether you need a <strong>GST invoice generator</strong> for regular sales, a proforma invoice for advance billing, or a bill of supply for exempt goods, InvoiceBana is the complete solution. It is designed specifically as an <strong>invoice generator India</strong> to serve local business ecosystems, from small retail shops to large consulting agencies.</p>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Trust Section -->
+  <!-- Section 2: Why Choose InvoiceBana -->
   <section class="section" style="background-color: var(--bg);">
     <div class="container">
       <h2 class="text-center mb-4">Why Choose InvoiceBana?</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
         <div class="card">
-          <div class="card-title">100% Free Forever</div>
-          <p>No hidden charges, no premium plans. Create unlimited invoices absolutely free.</p>
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Free Forever</div>
+          <p>100% free with no hidden charges, premium paywalls, or limits on the number of invoices you can create.</p>
         </div>
         <div class="card">
-          <div class="card-title">No Account Needed</div>
-          <p>No login, no signup. Just open, fill, and download your invoice instantly.</p>
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Instant PDF Download</div>
+          <p>Download clean, print-ready PDF invoices to your device in seconds, generated entirely client-side.</p>
         </div>
         <div class="card">
-          <div class="card-title">GST Compliant</div>
-          <p>Follows all GST Rule 46 requirements. Your invoices are legally valid.</p>
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">GST Compliant</div>
+          <p>Invoices created match the legal requirements of GST Rule 46, featuring proper CGST, SGST, IGST splits.</p>
         </div>
         <div class="card">
-          <div class="card-title">Instant PDF Download</div>
-          <p>Generate professional PDF invoices in seconds. No server delays or wait times.</p>
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Professional Layout</div>
+          <p>Impress your clients with a modern, high-contrast invoice layout optimized for business transactions.</p>
         </div>
         <div class="card">
-          <div class="card-title">Your Data is Private</div>
-          <p>All processing happens in your browser. Your data never leaves your device.</p>
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Mobile Friendly</div>
+          <p>Responsive design allows you to create, preview, and download invoices comfortably from any mobile or tablet.</p>
         </div>
         <div class="card">
-          <div class="card-title">Works on Mobile</div>
-          <p>Fully responsive design. Create invoices on desktop, tablet, or mobile.</p>
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">No Registration</div>
+          <p>Skip the sign-up process. We don't ask for email, password, or verification. Open and start billing.</p>
+        </div>
+        <div class="card">
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Fast Invoice Generation</div>
+          <p>Optimized algorithms perform live tax splits, total calculation, and word conversion instantly as you type.</p>
+        </div>
+        <div class="card">
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">100% Secure &amp; Private</div>
+          <p>Your client and financial data stays inside your browser. We never transfer or store details on our servers.</p>
+        </div>
+        <div class="card">
+          <div class="card-title" style="color: var(--primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Print Ready</div>
+          <p>Export in standard A4 format with perfect padding and grids, ready for physical printing and filing.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="section">
+  <!-- Section 3: Who Can Use InvoiceBana -->
+  <section class="section" style="background-color: var(--surface);">
+    <div class="container">
+      <h2 class="text-center mb-4">Who Can Use InvoiceBana?</h2>
+      <p class="text-center mb-5" style="max-width: 700px; margin: 0 auto 3rem auto;">InvoiceBana is built to cater to a wide range of professionals, businesses, and taxpayers across India. Here is who benefits most:</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem;">
+        <div style="background-color: var(--bg); padding: 1.5rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Freelancers</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 0;">Web developers, writers, designers, and marketers who need to send quick, professional bills without accounting software.</p>
+        </div>
+        <div style="background-color: var(--bg); padding: 1.5rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Small Businesses</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 0;">Micro and small enterprises (MSMEs) needing a zero-cost billing solution to keep operating costs low.</p>
+        </div>
+        <div style="background-color: var(--bg); padding: 1.5rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Retail Shops</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 0;">Local store owners requiring quick bills of supply or tax invoices for walk-in customers.</p>
+        </div>
+        <div style="background-color: var(--bg); padding: 1.5rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Agencies</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 0;">Creative, digital marketing, and PR agencies providing monthly service invoices to corporate clients.</p>
+        </div>
+        <div style="background-color: var(--bg); padding: 1.5rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Consultants</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 0;">Financial advisors, legal consultants, and IT experts who require invoice-based billing for services.</p>
+        </div>
+        <div style="background-color: var(--bg); padding: 1.5rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Contractors</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 0;">Civil, logistical, or workforce contractors billing for materials, labor, and project milestones.</p>
+        </div>
+        <div style="background-color: var(--bg); padding: 1.5rem; border-radius: var(--radius-md); border-top: 4px solid var(--accent);">
+          <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">Startups</h3>
+          <p style="font-size: 0.95rem; margin-bottom: 0;">Early-stage tech or product startups that want to send professional invoices before deploying ERP tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: How to Generate an Invoice -->
+  <section class="section" style="background-color: var(--bg);">
+    <div class="container">
+      <h2 class="text-center mb-4">How to Generate an Invoice Online</h2>
+      <p class="text-center mb-5" style="max-width: 600px; margin: 0 auto 3rem auto;">Follow these simple steps to create your professional, GST-compliant PDF invoice in seconds:</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto;">
+        <div style="text-align: center; padding: 1.5rem;">
+          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">1</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Enter Business Info</h3>
+          <p style="font-size: 0.9rem;">Fill in your business name, address, GSTIN, contact details, and state.</p>
+        </div>
+        <div style="text-align: center; padding: 1.5rem;">
+          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">2</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Add Customer Details</h3>
+          <p style="font-size: 0.9rem;">Input the buyer's name, billing address, state, and optional GSTIN.</p>
+        </div>
+        <div style="text-align: center; padding: 1.5rem;">
+          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">3</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Add Products &amp; Prices</h3>
+          <p style="font-size: 0.9rem;">List descriptions, HSN codes, quantity, units, rates, and GST rates for items.</p>
+        </div>
+        <div style="text-align: center; padding: 1.5rem;">
+          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">4</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Calculate Taxes</h3>
+          <p style="font-size: 0.9rem;">The generator will split GST into CGST/SGST or IGST based on the state selection.</p>
+        </div>
+        <div style="text-align: center; padding: 1.5rem;">
+          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">5</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Download PDF</h3>
+          <p style="font-size: 0.9rem;">Preview the document structure, click "Download PDF", and save it instantly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Benefits -->
+  <section class="section" style="background-color: var(--surface);">
+    <div class="container">
+      <h2 class="text-center mb-4">Benefits of Using InvoiceBana</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
+        <div class="card" style="box-shadow: var(--shadow-md);">
+          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Save Valuable Time</h3>
+          <p>By automating calculations and layouts, you can issue professional invoices in under a minute, freeing up hours to focus on growing your business operations.</p>
+        </div>
+        <div class="card" style="box-shadow: var(--shadow-md);">
+          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Reduce Costly Mistakes</h3>
+          <p>Manual tax calculations often result in CGST/SGST errors. Automated math guarantees zero discrepancies, keeping your bookkeeping clean and GSTR-1 preparation stress-free.</p>
+        </div>
+        <div class="card" style="box-shadow: var(--shadow-md);">
+          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Professional Invoices</h3>
+          <p>A well-structured invoice featuring a neat table, terms, notes, and proper tax breakdown shows clients that you run a professional and compliant business setup.</p>
+        </div>
+        <div class="card" style="box-shadow: var(--shadow-md);">
+          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Easy Bookkeeping</h3>
+          <p>PDF downloads let you store invoices organized by numbers or dates. This simplifies audits, filing tax returns, and tracking pending collections.</p>
+        </div>
+        <div class="card" style="box-shadow: var(--shadow-md);">
+          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Better Customer Trust</h3>
+          <p>Transparent billing with line-item breakdowns, accurate GSTINs, and states builds buyer confidence, leading to prompt clearings and strong long-term relationships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: FAQ -->
+  <section class="section" style="background-color: var(--bg);" id="faq">
     <div class="container">
       <h2 class="text-center mb-4">Frequently Asked Questions</h2>
       <div style="max-width: 800px; margin: 0 auto;">
         <div class="card mb-3">
-          <h4>Is this tool really free?</h4>
-          <p>Yes, absolutely! InvoiceBana is 100% free and will remain free forever. We don't have any premium plans or hidden charges. Our mission is to empower every Indian small business with free invoicing tools.</p>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Is InvoiceBana really free?</h3>
+          <p>Yes. InvoiceBana is a 100% free online utility. There are no hidden fees, limits on invoice counts, or registration blocks. It will remain free forever to support Indian small businesses.</p>
         </div>
         <div class="card mb-3">
-          <h4>Is my business data safe?</h4>
-          <p>Yes. All your data is processed entirely in your browser. We never send your data to any server or store it anywhere. Once you close the browser, the data is gone. Your privacy is our top priority.</p>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Can I create GST-compliant invoices here?</h3>
+          <p>Absolutely. The tool conforms to GST Rule 46 requirements. It formats your fields, business information, buyer details, HSN codes, and splits taxes into CGST, SGST, and IGST dynamically.</p>
         </div>
         <div class="card mb-3">
-          <h4>Can I generate an invoice without GSTIN?</h4>
-          <p>Yes, you can. GSTIN is optional in the form. If the buyer doesn't have a GSTIN, simply leave that field empty. Your invoice will still be valid and compliant.</p>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Can I download my invoice as a PDF?</h3>
+          <p>Yes. When you click "Download PDF", a professional PDF file is compiled client-side in your browser and downloaded directly to your computer or phone.</p>
         </div>
         <div class="card mb-3">
-          <h4>What is the difference between CGST, SGST, and IGST?</h4>
-          <p>CGST (Central GST) and SGST (State GST) are applied when both seller and buyer are in the same state (intra-state transaction). IGST (Integrated GST) is applied when they are in different states (inter-state transaction). The tool automatically detects this based on the states you select.</p>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Do I need to sign up or create an account?</h3>
+          <p>No account or registration is required. You do not need to share passwords, emails, or personal business credentials. Just open the page, enter your details, and download.</p>
         </div>
         <div class="card mb-3">
-          <h4>Is a GST invoice legally valid if generated online?</h4>
-          <p>Yes. As per GST Rule 46, an invoice generated online is legally valid as long as it contains all the mandatory fields (business name, GSTIN if applicable, invoice number, date, buyer details, item details, GST calculation, etc.). InvoiceBana creates invoices that comply with all these requirements.</p>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Is my business data stored on your servers?</h3>
+          <p>No. InvoiceBana runs entirely inside your browser. All calculations, data formatting, and PDF compilation take place locally. We never store or transmit your billing data to our servers.</p>
         </div>
         <div class="card mb-3">
-          <h4>What is HSN code and do I need it?</h4>
-          <p>HSN (Harmonized System of Nomenclature) is a code that classifies goods. It determines the GST rate applicable to a product. If your turnover exceeds ₹5 crore, HSN codes are mandatory on invoices. Use our HSN Finder tool to search for the correct code for your products.</p>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Can I print these invoices physically?</h3>
+          <p>Yes. The downloaded PDF file is configured in standard A4 size with optimal printable borders. You can print it directly or email it to your clients.</p>
+        </div>
+        <div class="card mb-3">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Can I use this invoice generator on mobile?</h3>
+          <p>Yes. InvoiceBana is built using a responsive layout. You can enter invoice items, verify previews, and compile PDF downloads seamlessly on smartphones and tablets.</p>
+        </div>
+        <div class="card mb-3">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Can I add my company logo?</h3>
+          <p>For high performance, the tool currently relies on a clean, minimal text format. A custom logo feature is planned for a future update. The current layout remains accepted by all tax departments.</p>
+        </div>
+        <div class="card mb-3">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">What is the difference between CGST, SGST, and IGST?</h3>
+          <p>CGST (Central GST) and SGST (State GST) apply to intra-state transactions (seller and buyer in the same state). IGST (Integrated GST) applies to inter-state sales. Our tool detects this based on state fields and applies the split automatically.</p>
+        </div>
+        <div class="card mb-3">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Are digital invoices generated by InvoiceBana legally valid?</h3>
+          <p>Yes. Under GST rules, any invoice that records required fields (GSTINs, business details, sequence numbers, dates, HSNs, rates, totals, and signatures/declarations) is legally binding. InvoiceBana provides all these blocks.</p>
+        </div>
+        <div class="card mb-3">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">What is an HSN code and is it mandatory?</h3>
+          <p>HSN (Harmonized System of Nomenclature) is a product classification code. For businesses with turnover exceeding ₹5 crores, a 4 or 6-digit HSN code is mandatory on GST invoices. You can find codes using our HSN Finder tool.</p>
+        </div>
+        <div class="card mb-3">
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.5rem;">Can I generate proforma invoices or bills of supply?</h3>
+          <p>Yes. You can select "Proforma Invoice" or "Bill of Supply" from the "Invoice Type" dropdown. The tool adjusts titles on the generated preview and PDF output automatically.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Cookie Consent Banner -->
-  <div class="cookie-consent">
-    We use cookies for analytics to improve your experience. 
-    <button class="btn-accept" style="background: var(--accent); color: black; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Accept</button>
+  <div class="cookie-consent" style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 1rem; text-align: center; box-shadow: var(--shadow-xl); z-index: 2000; display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+    <span>We use cookies for basic site analytics to improve your experience.</span>
+    <button class="btn-accept" style="background: var(--accent); color: white; border: none; padding: 0.5rem 1.25rem; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600;">Accept</button>
   </div>
 
-  <!-- Footer -->
-  <footer>
+  <!-- Footer Section -->
+  <footer class="site-footer" style="background-color: var(--text-dark); color: #cbd5e1; padding: 60px 0 20px 0; border-top: 1px solid #1e293b;">
     <div class="container">
-      <div class="footer-content">
+      <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
         <div class="footer-section">
-          <h3>InvoiceBana</h3>
-          <p>Free GST tools for every Indian business.</p>
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.4rem;">InvoiceBana</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem;">Providing free, accurate, and secure GST tools for small businesses, freelancers, and startups in India.</p>
+          <p style="color: #94a3b8; font-size: 0.95rem; margin-top: 1rem;">Made with ❤ for Indian Businesses.</p>
         </div>
         <div class="footer-section">
-          <h3>Quick Links</h3>
-          <a href="index.html">Invoice Generator</a>
-          <a href="gst-calculator.html">GST Calculator</a>
-          <a href="hsn-finder.html">HSN Finder</a>
-          <a href="blog/">Blog</a>
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Quick Links</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/" style="color: #cbd5e1; font-weight: 400;">Free Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/gst-calculator" style="color: #cbd5e1; font-weight: 400;">GST Calculator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/hsn-finder" style="color: #cbd5e1; font-weight: 400;">HSN Finder</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/blog" style="color: #cbd5e1; font-weight: 400;">Tax &amp; Billing Blog</a></li>
+          </ul>
         </div>
         <div class="footer-section">
-          <h3>Legal</h3>
-          <a href="about.html">About Us</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="disclaimer.html">Disclaimer</a>
-          <a href="contact.html">Contact Us</a>
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Alternative Tools</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-generator" style="color: #cbd5e1; font-weight: 400;">Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/gst-invoice-generator" style="color: #cbd5e1; font-weight: 400;">GST Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/free-invoice-generator" style="color: #cbd5e1; font-weight: 400;">Free Invoice Maker</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-maker" style="color: #cbd5e1; font-weight: 400;">Invoice Creator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/proforma-invoice-generator" style="color: #cbd5e1; font-weight: 400;">Proforma Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-template" style="color: #cbd5e1; font-weight: 400;">Invoice Templates</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Company &amp; Legal</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/about" style="color: #cbd5e1; font-weight: 400;">About Us</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/privacy-policy" style="color: #cbd5e1; font-weight: 400;">Privacy Policy</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/disclaimer" style="color: #cbd5e1; font-weight: 400;">Disclaimer</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/contact" style="color: #cbd5e1; font-weight: 400;">Contact Us</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/sitemap.xml" style="color: #cbd5e1; font-weight: 400;">Sitemap.xml</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 InvoiceBana. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="disclaimer.html">Disclaimer</a></p>
+      <div class="footer-bottom" style="border-top: 1px solid #1e293b; padding-top: 1.5rem; text-align: center; font-size: 0.9rem; color: #64748b;">
+        <p>&copy; 2026 InvoiceBana. All rights reserved. Indian Businesses GST Utility.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Structured Data / JSON-LD Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://invoicebana.vercel.app/#software",
+        "name": "InvoiceBana",
+        "url": "https://invoicebana.vercel.app/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "description": "Free GST Invoice Generator for Indian businesses and freelancers. Create and download professional, GST-compliant PDF invoices instantly without registration.",
+        "browserRequirements": "Requires HTML5, Javascript, and a modern browser."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://invoicebana.vercel.app/#website",
+        "url": "https://invoicebana.vercel.app/",
+        "name": "InvoiceBana",
+        "description": "Free GST Invoice Generator for India. Download PDF invoices instantly.",
+        "publisher": {
+          "@id": "https://invoicebana.vercel.app/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://invoicebana.vercel.app/#organization",
+        "name": "InvoiceBana",
+        "url": "https://invoicebana.vercel.app/",
+        "logo": "https://invoicebana.vercel.app/favicon-512x512.png",
+        "sameAs": []
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://invoicebana.vercel.app/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://invoicebana.vercel.app/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://invoicebana.vercel.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is InvoiceBana free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, InvoiceBana is 100% free forever. There are no hidden fees, premium subscriptions, or limits on the number of invoices you can create."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I create GST invoices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. InvoiceBana is fully GST compliant, supporting CGST, SGST, and IGST tax splits as per GST Rule 46 requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I download PDF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can download professional, print-ready PDF invoices instantly to your device in seconds, with no server-side wait time."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to sign up or create an account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You can generate invoices instantly without any signup or account creation. Your email and business credentials are not required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my business data stored on your servers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. InvoiceBana processes all data and PDF creation locally in your browser. Your business and client details are never uploaded or stored on any server."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I print invoices generated by InvoiceBana?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The downloaded PDFs are formatted in standard A4 size, with perfect borders, grids, and padding ready for physical printing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use InvoiceBana on mobile devices?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. InvoiceBana is built with a responsive design, meaning you can easily input data, review the preview, and download invoices on any smartphone or tablet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I add my company logo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The logo upload feature is currently in development and will be released in an upcoming update. Currently, the clean text header is used, which is legally valid."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between CGST, SGST, and IGST?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "CGST and SGST are applied for sales within the same state (intra-state transaction), while IGST is applied for sales between different states (inter-state transaction)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is an online generated GST invoice legally valid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Under GST Rule 46, a digitally created invoice is legally valid as long as it contains mandatory data points like business names, GSTINs, HSN codes, rates, taxes, and unique serial numbers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is an HSN code and is it mandatory?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HSN stands for Harmonized System of Nomenclature. It classifies goods for tax purposes. For businesses with turnover above ₹5 crores, HSN codes are mandatory."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I generate proforma invoices or bills of supply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Select 'Proforma Invoice' or 'Bill of Supply' in the 'Invoice Type' dropdown on the form, and the preview and PDF labels will adjust automatically."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <!-- Scripts -->
   <script src="js/nav.js"></script>

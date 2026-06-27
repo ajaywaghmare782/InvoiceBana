@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free Proforma Invoice Generator - Create professional proforma invoices online for free. No login or signup required. Easy PDF export.">
+  <meta property="og:title" content="Free Proforma Invoice Generator | Create Custom Proforma PDFs Online">
+  <meta property="og:description" content="Create professional proforma invoices online instantly for free. No registration required. Easy PDF downloads client-side.">
+  <meta property="og:image" content="https://invoicebana.vercel.app/assets/og-image.png">
+  <meta property="og:url" content="https://invoicebana.vercel.app/proforma-invoice-generator">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free Proforma Invoice Generator | Create Custom Proforma PDFs Online">
+  <meta name="twitter:description" content="Create professional proforma invoices online instantly for free. No registration required.">
+  <meta name="twitter:image" content="https://invoicebana.vercel.app/assets/og-image.png">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://invoicebana.vercel.app/proforma-invoice-generator">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  
+  <title>Free Proforma Invoice Generator | Create Custom Proforma PDFs Online</title>
+  <link rel="stylesheet" href="css/style.css?v=1.4">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1.1">
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4551792521922995" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+      <div class="container">
+        <div class="navbar">
+          <a href="/" class="navbar-logo" aria-label="InvoiceBana Home">
+            <img src="favicon.svg?v=1.1" alt="InvoiceBana Logo" class="logo-icon" width="32" height="32"> 
+            InvoiceBana
+          </a>
+          <button class="navbar-toggle" aria-label="Toggle Navigation Menu">☰</button>
+          <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/gst-calculator">GST Calculator</a></li>
+            <li><a href="/hsn-finder">HSN Finder</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="container" style="margin-top: 1.5rem; margin-bottom: -1rem;">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ul style="display: flex; list-style: none; padding: 0; margin: 0; font-size: 0.9rem; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+        <li><a href="/" style="color: var(--primary);">Home</a></li>
+        <li style="color: var(--text-muted); font-size: 0.8rem;">&gt;</li>
+        <li style="color: var(--text-muted);" aria-current="page">Proforma Invoice Generator</li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section hero-section" style="background-color: var(--primary); color: white; padding: 60px 0; margin-top: 1.5rem;">
+      <div class="container">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+          <h1 style="color: white; margin-bottom: 0.5rem; font-size: 3rem;">Free Proforma Invoice Generator</h1>
+          <h2 style="color: rgba(255,255,255,0.9); font-size: 1.8rem; font-weight: 600; margin-bottom: 1rem; border: none;">Generate Custom Proforma Invoices in Seconds</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 1.5rem; opacity: 0.9; line-height: 1.5;">Select Proforma Invoice from our generator tool below to instantly compile your document. Completely free and secure.</p>
+          <button class="btn btn-accent" onclick="scrollToElement('#invoice-generator')" aria-label="Open Proforma Builder">Generate Proforma Invoice Now ↓</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Ad Slot -->
+    <div class="container" style="margin-top: 2rem;">
+      <div class="ad-container">
+        <!-- AdSense Code will be loaded here dynamically by Google -->
+      </div>
+    </div>
+
+    <!-- Invoice Generator Tool -->
+    <section class="section" id="invoice-generator" style="padding: 40px 0;">
+      <div class="container">
+        <h2 class="text-center mb-4">Proforma Invoice Maker</h2>
+        <div class="invoice-container">
+          <!-- Form Panel -->
+          <div class="invoice-form">
+            <form id="invoiceForm">
+              <!-- Seller Details -->
+              <div class="form-section">
+                <h3>Seller Details</h3>
+                <div class="form-group">
+                  <label for="businessName">Business Name *</label>
+                  <input type="text" id="businessName" required aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label for="gstin">GSTIN (Optional)</label>
+                  <input type="text" id="gstin" placeholder="22AAAAA0000A1Z5">
+                </div>
+                <div class="form-group">
+                  <label for="businessAddress">Address</label>
+                  <textarea id="businessAddress"></textarea>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="businessState">State *</label>
+                    <select id="businessState" required aria-required="true"></select>
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email">
+                </div>
+              </div>
+
+              <!-- Buyer Details -->
+              <div class="form-section">
+                <h3>Buyer Details</h3>
+                <div class="form-group">
+                  <label for="buyerName">Buyer Name *</label>
+                  <input type="text" id="buyerName" required aria-required="true">
+                </div>
+                <div class="form-group">
+                  <label for="buyerGstin">GSTIN (Optional)</label>
+                  <input type="text" id="buyerGstin">
+                </div>
+                <div class="form-group">
+                  <label for="buyerAddress">Address</label>
+                  <textarea id="buyerAddress"></textarea>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="buyerState">State *</label>
+                    <select id="buyerState" required aria-required="true"></select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Invoice Details -->
+              <div class="form-section">
+                <h3>Invoice Details</h3>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="invoiceNumber">Invoice Number *</label>
+                    <input type="text" id="invoiceNumber" required aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label for="invoiceDate">Invoice Date *</label>
+                    <input type="date" id="invoiceDate" required aria-required="true">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="dueDate">Due Date</label>
+                    <input type="date" id="dueDate">
+                  </div>
+                  <div class="form-group">
+                    <label for="invoiceType">Invoice Type</label>
+                    <select id="invoiceType">
+                      <option>Tax Invoice</option>
+                      <option>Bill of Supply</option>
+                      <option selected>Proforma Invoice</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Line Items -->
+              <div class="form-section">
+                <h3>Items</h3>
+                <table class="line-items-table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Description</th>
+                      <th>HSN/SAC</th>
+                      <th>Qty</th>
+                      <th>Unit</th>
+                      <th>Rate (₹)</th>
+                      <th>GST %</th>
+                      <th>Amount</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="line-item-row">
+                      <td>1</td>
+                      <td><input type="text" data-field="description" placeholder="Item description" aria-label="Item description"></td>
+                      <td><input type="text" data-field="hsn" placeholder="HSN/SAC" aria-label="HSN or SAC code"></td>
+                      <td><input type="number" data-field="qty" placeholder="Qty" min="1" value="1" aria-label="Quantity"></td>
+                      <td><input type="text" data-field="unit" placeholder="Unit" value="pc" aria-label="Unit"></td>
+                      <td><input type="number" data-field="rate" placeholder="Rate" min="0" step="0.01" aria-label="Rate in Rupees"></td>
+                      <td>
+                        <select data-field="gst" aria-label="GST Percentage">
+                          <option value="0">0%</option>
+                          <option value="5">5%</option>
+                          <option value="12">12%</option>
+                          <option value="18" selected>18%</option>
+                          <option value="28">28%</option>
+                        </select>
+                      </td>
+                      <td class="line-amount">₹ 0</td>
+                      <td><button type="button" class="btn-remove-item btn-small" onclick="removeLineItem(this)" style="visibility: hidden;" aria-label="Remove item">Remove</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button type="button" id="addItemBtn" class="btn btn-secondary btn-small mt-2" aria-label="Add Item">+ Add Item</button>
+              </div>
+
+              <!-- Summary -->
+              <div class="form-section">
+                <h3>Summary</h3>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                  <span>Subtotal:</span>
+                  <span id="subtotal">₹ 0.00</span>
+                </div>
+                <div id="cgst-sgst" data-field="cgst-sgst" style="display: none;">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>CGST:</span>
+                    <span id="cgstAmount">₹ 0.00</span>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>SGST:</span>
+                    <span id="sgstAmount">₹ 0.00</span>
+                  </div>
+                </div>
+                <div id="igst-div" data-field="igst" style="display: none;">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                    <span>IGST:</span>
+                    <span id="igstAmount">₹ 0.00</span>
+                  </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                  <span>Total GST:</span>
+                  <span id="totalGstAmount">₹ 0.00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-weight: 700; font-size: 1.1rem; padding-top: 0.5rem; border-top: 1px solid var(--border);">
+                  <span>Grand Total:</span>
+                  <span id="grandTotal">₹ 0.00</span>
+                </div>
+                <div style="margin-top: 1rem; padding: 0.75rem; background-color: var(--bg); border-left: 4px solid var(--accent); font-style: italic;">
+                  Amount in Words: <span id="amountInWords">[Calculate]</span>
+                </div>
+              </div>
+
+              <!-- Notes & Terms -->
+              <div class="form-section">
+                <h3>Notes &amp; Terms</h3>
+                <div class="form-group">
+                  <label for="notes">Notes</label>
+                  <textarea id="notes" placeholder="Thank you for your business..."></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="terms">Terms &amp; Conditions</label>
+                  <textarea id="terms" placeholder="Payment terms, delivery conditions..."></textarea>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem;">
+                <button type="button" id="previewInvoiceBtn" class="btn btn-secondary" onclick="updateInvoicePreview()">Preview</button>
+                <button type="button" id="downloadPdfBtn" class="btn btn-primary">Download PDF</button>
+                <button type="button" id="resetFormBtn" class="btn btn-secondary">Reset</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Preview Panel -->
+          <div class="invoice-preview">
+            <h3 style="margin-bottom: 1.5rem;">Invoice Preview</h3>
+            <div class="invoice-preview-content">
+              <!-- Invoice Header -->
+              <div class="invoice-header">
+                <div>
+                  <div class="invoice-title">PROFORMA INVOICE</div>
+                  <div class="invoice-section-title">InvoiceBana</div>
+                </div>
+                <div class="invoice-meta">
+                  <div><strong>Invoice #:</strong> <span id="previewInvoiceNumber">INV-001</span></div>
+                  <div><strong>Date:</strong> <span id="previewInvoiceDate">2026-01-01</span></div>
+                  <div><strong>Due Date:</strong> <span id="previewDueDate">N/A</span></div>
+                  <div><strong>Type:</strong> <span id="previewInvoiceType">Proforma Invoice</span></div>
+                </div>
+              </div>
+
+              <!-- Seller Details -->
+              <div class="invoice-section">
+                <div class="invoice-section-title">Sold By</div>
+                <div class="invoice-details">
+                  <div><strong id="previewBusinessName">[Business Name]</strong></div>
+                  <div><strong>GSTIN:</strong> <span id="previewGstin">[GSTIN]</span></div>
+                  <div><strong>Address:</strong> <span id="previewAddress">[Address]</span></div>
+                  <div><strong>State:</strong> <span id="previewState">[State]</span></div>
+                  <div><strong>Phone:</strong> <span id="previewPhone">[Phone]</span></div>
+                  <div><strong>Email:</strong> <span id="previewEmail">[Email]</span></div>
+                </div>
+              </div>
+
+              <!-- Buyer Details -->
+              <div class="invoice-section">
+                <div class="invoice-section-title">Bill To</div>
+                <div class="invoice-details">
+                  <div><strong id="previewBuyerName">[Buyer Name]</strong></div>
+                  <div><strong>GSTIN:</strong> <span id="previewBuyerGstin">[GSTIN]</span></div>
+                  <div><strong>Address:</strong> <span id="previewBuyerAddress">[Address]</span></div>
+                  <div><strong>State:</strong> <span id="previewBuyerState">[State]</span></div>
+                </div>
+              </div>
+
+              <!-- Line Items -->
+              <div class="invoice-section">
+                <table class="invoice-items-table">
+                  <thead>
+                    <tr>
+                      <th>Description</th>
+                      <th>HSN/SAC</th>
+                      <th>Qty</th>
+                      <th>Unit</th>
+                      <th>Rate</th>
+                      <th>GST %</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="7" style="text-align: center; padding: 2rem; color: var(--text-muted);">Add items to see preview</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Summary -->
+              <div class="invoice-section">
+                <div class="invoice-summary">
+                  <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span>₹ <span id="previewSubtotal">0.00</span></span>
+                  </div>
+                  <div class="summary-row" id="preview-cgst-sgst" style="display: none;">
+                    <span>CGST:</span>
+                    <span>₹ <span id="previewCgst">0.00</span></span>
+                  </div>
+                  <div class="summary-row" id="preview-sgst" style="display: none;">
+                    <span>SGST:</span>
+                    <span>₹ <span id="previewSgst">0.00</span></span>
+                  </div>
+                  <div class="summary-row" id="preview-igst" style="display: none;">
+                    <span>IGST:</span>
+                    <span>₹ <span id="previewIgst">0.00</span></span>
+                  </div>
+                  <div class="summary-row">
+                    <span>Total GST:</span>
+                    <span>₹ <span id="previewTotalGst">0.00</span></span>
+                  </div>
+                  <div class="summary-row total">
+                    <span>GRAND TOTAL:</span>
+                    <span>₹ <span id="previewGrandTotal">0.00</span></span>
+                  </div>
+                  <div class="amount-in-words">
+                    Amount in Words: <span id="previewAmountInWords">Rupees Zero Only</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Slot -->
+    <div class="container" style="margin-top: 2rem; margin-bottom: 2rem;">
+      <div class="ad-container">
+        <!-- AdSense Code will be loaded here dynamically by Google -->
+      </div>
+    </div>
+
+    <!-- Educational SEO Content Section -->
+    <section class="section" style="background-color: var(--surface); border-top: 1px solid var(--border);">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto; line-height: 1.7;">
+          <h2 style="margin-bottom: 1.5rem;">What is a Proforma Invoice?</h2>
+          <p>A <strong>proforma invoice</strong> is a preliminary bill of sale sent to a buyer prior to the shipment of goods or delivery of services. It details the estimated costs, product descriptions, terms of supply, and shipping logistics. Unlike a standard commercial tax invoice, a proforma invoice is a commitment to supply rather than a formal request for payment or a legal tax record. It establishes mutual trust, acts as a firm quote, and enables clients to arrange internal purchase approvals or import clearances.</p>
+          <p>Using a <strong>proforma invoice generator</strong> allows businesses to issue structured, professional quote sheets. In import-export trade or large corporate service projects, a client rarely pays without a formal document detailing exactly what is to be delivered. The proforma document functions as that initial draft, allowing the customer to review the transaction layout, agree on pricing, and make advance payments.</p>
+
+          <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Proforma Invoice vs. Commercial Invoice vs. Quotation</h3>
+          <p>Understanding the distinction between these three documents is essential for correct bookkeeping:</p>
+          <ul style="margin-left: 2rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+            <li><strong>Quotation:</strong> An informal proposal outlining estimated rates, subject to change and negotiation. It does not bind either party.</li>
+            <li><strong>Proforma Invoice:</strong> A binding agreement showing the exact terms of sale. It is issued before the work begins or goods are shipped, often to secure advance payment. It does not record actual accounts receivable or act as a tax claim.</li>
+            <li><strong>Commercial/Tax Invoice:</strong> The final legal document issued after supply has occurred. It records the final transaction value, calculates legal taxes (like GST), and acts as the official tax record for input credit claims.</li>
+          </ul>
+
+          <h3 style="margin-top: 2rem; margin-bottom: 1rem;">When Should Your Business Issue a Proforma Invoice?</h3>
+          <p>Incorporate proforma documents into your billing pipeline in these standard business scenarios:</p>
+          <ul style="margin-left: 2rem; margin-bottom: 1.5rem; color: var(--text-muted);">
+            <li><strong>Securing Advance Payments:</strong> If you require partial or full payments before manufacturing goods or beginning a consulting project.</li>
+            <li><strong>Custom Clearance &amp; Import Licences:</strong> In international trade, customs departments require a proforma invoice to assess import duties and clear cargo.</li>
+            <li><strong>Internal Corporate Approvals:</strong> Corporate accounts departments require a proforma invoice to issue a purchase order (PO) and approve budget allocations.</li>
+            <li><strong>Project Milestone Billing:</strong> For long-term contracting or software development, proforma invoices confirm the scope and value of milestones before final billing.</li>
+          </ul>
+
+          <h3 style="margin-top: 2rem; margin-bottom: 1rem;">GST Rules for Proforma Invoicing in India</h3>
+          <p>Under India's GST regulations, a proforma invoice is not a legal tax document and does not allow buyers to claim Input Tax Credit (ITC). It does not require registration on government e-invoice portals. However, to maintain clean auditing, the document should match the layout of the final tax invoice, listing correct HSN codes, buyer GSTINs, and estimated tax calculations. Once the advance is received or supply occurs, you must issue a final GST tax invoice to comply with the tax department.</p>
+
+          <h3 style="margin-top: 2rem; margin-bottom: 1rem;">How to Convert a Proforma to a Tax Invoice</h3>
+          <p>With InvoiceBana, transitioning is simple. You can generate a proforma invoice using our tool to align on pricing and details with the client. Once the transaction is finalized, change the "Invoice Type" dropdown from "Proforma Invoice" to "Tax Invoice", update the serial number and date, and download the final legal PDF. This keeps your billing workflow clean and consistent.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-consent" style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 1rem; text-align: center; box-shadow: var(--shadow-xl); z-index: 2000; display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+    <span>We use cookies for basic site analytics to improve your experience.</span>
+    <button class="btn-accept" style="background: var(--accent); color: white; border: none; padding: 0.5rem 1.25rem; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600;">Accept</button>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="site-footer" style="background-color: var(--text-dark); color: #cbd5e1; padding: 60px 0 20px 0; border-top: 1px solid #1e293b;">
+    <div class="container">
+      <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.4rem;">InvoiceBana</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem;">Providing free, accurate, and secure GST tools for small businesses, freelancers, and startups in India.</p>
+        </div>
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Quick Links</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/" style="color: #cbd5e1; font-weight: 400;">Free Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/gst-calculator" style="color: #cbd5e1; font-weight: 400;">GST Calculator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/hsn-finder" style="color: #cbd5e1; font-weight: 400;">HSN Finder</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/blog" style="color: #cbd5e1; font-weight: 400;">Tax &amp; Billing Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Alternative Tools</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-generator" style="color: #cbd5e1; font-weight: 400;">Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/gst-invoice-generator" style="color: #cbd5e1; font-weight: 400;">GST Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/free-invoice-generator" style="color: #cbd5e1; font-weight: 400;">Free Invoice Maker</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-maker" style="color: #cbd5e1; font-weight: 400;">Invoice Creator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/proforma-invoice-generator" style="color: #cbd5e1; font-weight: 400;">Proforma Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-template" style="color: #cbd5e1; font-weight: 400;">Invoice Templates</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Company &amp; Legal</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/about" style="color: #cbd5e1; font-weight: 400;">About Us</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/privacy-policy" style="color: #cbd5e1; font-weight: 400;">Privacy Policy</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/disclaimer" style="color: #cbd5e1; font-weight: 400;">Disclaimer</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/contact" style="color: #cbd5e1; font-weight: 400;">Contact Us</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/sitemap.xml" style="color: #cbd5e1; font-weight: 400;">Sitemap.xml</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom" style="border-top: 1px solid #1e293b; padding-top: 1.5rem; text-align: center; font-size: 0.9rem; color: #64748b;">
+        <p>&copy; 2026 InvoiceBana. All rights reserved. Indian Businesses GST Utility.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Structured Data / JSON-LD Schemas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://invoicebana.vercel.app/proforma-invoice-generator#software",
+        "name": "InvoiceBana Proforma Invoice Generator",
+        "url": "https://invoicebana.vercel.app/proforma-invoice-generator",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "All",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "description": "Free Online Proforma Invoice Generator. Create and export professional proforma invoices instantly without login or signup.",
+        "browserRequirements": "Requires HTML5, Javascript, and a modern browser."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://invoicebana.vercel.app/proforma-invoice-generator#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://invoicebana.vercel.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Proforma Invoice Generator",
+            "item": "https://invoicebana.vercel.app/proforma-invoice-generator"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Scripts -->
+  <script src="js/nav.js"></script>
+  <script src="js/invoice.js"></script>
+  <script src="js/pdf.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+</body>
+</html>

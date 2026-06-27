@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Free GST Calculator - Calculate CGST, SGST, IGST instantly. Works with both exclusive and inclusive rates.">
-  <meta property="og:title" content="GST Calculator - InvoiceBana">
-  <meta property="og:description" content="Free GST Calculator - Calculate CGST, SGST, IGST instantly.">
-  <meta property="og:image" content="/assets/og-image.png">
+  <meta name="description" content="Free GST Calculator - Calculate CGST, SGST, IGST instantly. Works with both exclusive and inclusive rates. Perfect for Indian businesses and freelancers.">
+  <meta property="og:title" content="Free GST Calculator | CGST, SGST & IGST Calculator | InvoiceBana">
+  <meta property="og:description" content="Calculate CGST, SGST, IGST instantly. Works with both exclusive and inclusive rates. Free, fast, and 100% accurate.">
+  <meta property="og:image" content="https://invoicebana.vercel.app/assets/og-image.png">
+  <meta property="og:url" content="https://invoicebana.vercel.app/gst-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free GST Calculator | CGST, SGST & IGST Calculator | InvoiceBana">
+  <meta name="twitter:description" content="Calculate CGST, SGST, IGST instantly. Works with both exclusive and inclusive rates.">
+  <meta name="twitter:image" content="https://invoicebana.vercel.app/assets/og-image.png">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://invoicebana.vercel.app/gst-calculator.html">
+  <link rel="canonical" href="https://invoicebana.vercel.app/gst-calculator">
   
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -19,7 +26,7 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
   
-  <title>GST Calculator - InvoiceBana</title>
+  <title>Free GST Calculator | CGST, SGST & IGST Calculator | InvoiceBana</title>
   <link rel="stylesheet" href="css/style.css?v=1.4">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
@@ -28,175 +35,231 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4551792521922995" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
-    <div class="container">
-      <div class="navbar">
-        <div class="navbar-logo"><img src="favicon.svg?v=1.1" alt="Logo" class="logo-icon"> InvoiceBana</div>
-        <button class="navbar-toggle">☰</button>
-        <ul class="navbar-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gst-calculator.html" class="active">GST Calculator</a></li>
-          <li><a href="hsn-finder.html">HSN Finder</a></li>
-          <li><a href="blog/">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+      <div class="container">
+        <div class="navbar">
+          <a href="/" class="navbar-logo" aria-label="InvoiceBana Home">
+            <img src="favicon.svg?v=1.1" alt="InvoiceBana Logo" class="logo-icon" width="32" height="32"> 
+            InvoiceBana
+          </a>
+          <button class="navbar-toggle" aria-label="Toggle Navigation Menu">☰</button>
+          <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/gst-calculator" class="active">GST Calculator</a></li>
+            <li><a href="/hsn-finder">HSN Finder</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="section" style="background-color: var(--primary); color: white;">
-    <div class="container">
-      <div style="text-align: center;">
-        <h1 style="color: white; margin-bottom: 1rem;">GST Calculator</h1>
-        <p style="font-size: 1.2rem;">Calculate CGST, SGST & IGST instantly — Free, Fast, Accurate</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Top Ad Slot -->
-  <div class="container" style="margin-top: 2rem;">
-    <div class="ad-container">
-      <!-- AdSense Code will be loaded here dynamically by Google -->
-    </div>
+  <!-- Breadcrumbs -->
+  <div class="container" style="margin-top: 1.5rem; margin-bottom: -1rem;">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <ul style="display: flex; list-style: none; padding: 0; margin: 0; font-size: 0.9rem; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+        <li><a href="/" style="color: var(--primary);">Home</a></li>
+        <li style="color: var(--text-muted); font-size: 0.8rem;">&gt;</li>
+        <li style="color: var(--text-muted);" aria-current="page">GST Calculator</li>
+      </ul>
+    </nav>
   </div>
 
-  <!-- Calculator Tool -->
-  <section class="section">
-    <div class="container" style="max-width: 700px;">
-      <div class="card">
-        <h2 class="text-center mb-3">Calculate Your GST</h2>
-        
-        <!-- Amount Input -->
-        <div class="form-group">
-          <label for="calcAmount">Amount (₹) *</label>
-          <input type="number" id="calcAmount" placeholder="Enter amount" min="0" step="0.01">
-        </div>
-
-        <!-- GST Rate Selection -->
-        <div class="form-group">
-          <label for="gstRate">GST Rate *</label>
-          <select id="gstRate">
-            <option value="">Select GST Rate</option>
-            <option value="0">0%</option>
-            <option value="5">5%</option>
-            <option value="12">12%</option>
-            <option value="18" selected>18%</option>
-            <option value="28">28%</option>
-          </select>
-        </div>
-
-        <!-- Exclusive / Inclusive Toggle -->
-        <div class="form-group">
-          <label>Is GST Included in Amount?</label>
-          <div class="calc-toggle" style="display: flex; gap: 1rem;">
-            <button type="button" class="btn btn-secondary active" data-type="exclusive">Exclusive (Add GST)</button>
-            <button type="button" class="btn btn-secondary" data-type="inclusive">Inclusive (Remove GST)</button>
-          </div>
-        </div>
-
-        <!-- State Type Toggle -->
-        <div class="form-group">
-          <label>Type of Transaction</label>
-          <div class="state-type-toggle" style="display: flex; gap: 1rem;">
-            <button type="button" class="btn btn-secondary active" data-type="intra">Intra-State (CGST+SGST)</button>
-            <button type="button" class="btn btn-secondary" data-type="inter">Inter-State (IGST)</button>
-          </div>
-        </div>
-
-        <!-- Results -->
-        <div id="calcResults" style="display: none; margin-top: 2rem; padding: 1.5rem; background-color: var(--bg); border-radius: 8px;">
-          <h3 style="margin-bottom: 1rem; color: var(--primary);">Calculation Results</h3>
-          
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
-            <span><strong>Base Amount:</strong></span>
-            <span>₹ <strong id="resultBaseAmount">0.00</strong></span>
-          </div>
-
-          <div id="resultCgstSgstContainer">
-            <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
-              <span>CGST:</span>
-              <span>₹ <strong id="resultCgst">0.00</strong></span>
-            </div>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
-              <span>SGST:</span>
-              <span>₹ <strong id="resultSgst">0.00</strong></span>
-            </div>
-          </div>
-
-          <div id="resultIgstContainer" style="display: none;">
-            <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
-              <span>IGST:</span>
-              <span>₹ <strong id="resultIgst">0.00</strong></span>
-            </div>
-          </div>
-
-          <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
-            <span><strong>Total GST:</strong></span>
-            <span>₹ <strong id="resultTotalGst">0.00</strong></span>
-          </div>
-
-          <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 2px solid var(--border);">
-            <span><strong>Grand Total:</strong></span>
-            <span style="font-size: 1.2rem; color: var(--primary);">₹ <strong id="resultGrandTotal">0.00</strong></span>
-          </div>
-
-          <button type="button" class="btn btn-accent btn-small" style="margin-top: 1rem; width: 100%;" onclick="copyResult('resultGrandTotal')">📋 Copy Result</button>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="section" style="background-color: var(--primary); color: white; padding: 60px 0; margin-top: 1.5rem;">
+      <div class="container">
+        <div style="text-align: center;">
+          <h1 style="color: white; margin-bottom: 0.5rem;">Free GST Calculator India</h1>
+          <p style="font-size: 1.2rem; margin-bottom: 0;">Calculate CGST, SGST &amp; IGST instantly — Free, Fast, Accurate</p>
         </div>
       </div>
+    </section>
 
-      <!-- Info Section -->
-      <div class="card mt-4">
-        <h3>Understanding CGST, SGST, and IGST</h3>
-        <p><strong>CGST (Central GST):</strong> This is the GST collected by the Central Government. In an intra-state transaction (both parties in the same state), CGST is applied at half of the total GST rate. For example, on an 18% GST rate, CGST is 9%.</p>
-        <p><strong>SGST (State GST):</strong> This is the GST collected by the State Government. Like CGST, in an intra-state transaction, SGST is also applied at half of the total GST rate. So CGST + SGST = total GST.</p>
-        <p><strong>IGST (Integrated GST):</strong> In an inter-state transaction (where the seller and buyer are in different states), the full GST is collected as IGST by the Central Government. No CGST or SGST is levied.</p>
-        <p><strong>Example:</strong> If you buy goods worth ₹1,000 from your state at 18% GST: You pay CGST ₹90 + SGST ₹90 = ₹180 total tax. But if you buy from a different state, you pay IGST ₹180 instead (same amount, but it all goes to central government).</p>
-      </div>
-
-      <!-- Bottom Ad Slot -->
-      <div class="ad-container" style="margin-top: 2rem;">
+    <!-- Top Ad Slot -->
+    <div class="container" style="margin-top: 2rem;">
+      <div class="ad-container">
         <!-- AdSense Code will be loaded here dynamically by Google -->
       </div>
     </div>
-  </section>
 
-  <!-- Cookie Consent Banner -->
-  <div class="cookie-consent">
-    We use cookies for analytics to improve your experience. 
-    <button class="btn-accept" style="background: var(--accent); color: black; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer;">Accept</button>
-  </div>
+    <!-- Calculator Tool -->
+    <section class="section" style="padding: 40px 0;">
+      <div class="container" style="max-width: 700px;">
+        <div class="card" style="box-shadow: var(--shadow-lg);">
+          <h2 class="text-center mb-4" style="font-size: 1.8rem;">Calculate Your GST Tax Split</h2>
+          
+          <!-- Amount Input -->
+          <div class="form-group">
+            <label for="calcAmount">Amount (₹) *</label>
+            <input type="number" id="calcAmount" placeholder="Enter base amount" min="0" step="0.01" aria-required="true" required>
+          </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>InvoiceBana</h3>
-          <p>Free GST tools for every Indian business.</p>
+          <!-- GST Rate Selection -->
+          <div class="form-group">
+            <label for="gstRate">GST Rate *</label>
+            <select id="gstRate" aria-required="true" required>
+              <option value="">Select GST Rate</option>
+              <option value="0">0%</option>
+              <option value="5">5%</option>
+              <option value="12">12%</option>
+              <option value="18" selected>18%</option>
+              <option value="28">28%</option>
+            </select>
+          </div>
+
+          <!-- Exclusive / Inclusive Toggle -->
+          <div class="form-group">
+            <label id="inclusiveLabel">Is GST Included in Amount?</label>
+            <div class="calc-toggle" style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+              <button type="button" class="btn btn-secondary active" data-type="exclusive" aria-describedby="inclusiveLabel">Exclusive (Add GST)</button>
+              <button type="button" class="btn btn-secondary" data-type="inclusive" aria-describedby="inclusiveLabel">Inclusive (Remove GST)</button>
+            </div>
+          </div>
+
+          <!-- State Type Toggle -->
+          <div class="form-group">
+            <label id="transactionLabel">Type of Transaction</label>
+            <div class="state-type-toggle" style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+              <button type="button" class="btn btn-secondary active" data-type="intra" aria-describedby="transactionLabel">Intra-State (CGST+SGST)</button>
+              <button type="button" class="btn btn-secondary" data-type="inter" aria-describedby="transactionLabel">Inter-State (IGST)</button>
+            </div>
+          </div>
+
+          <!-- Results -->
+          <div id="calcResults" style="display: none; margin-top: 2rem; padding: 1.5rem; background-color: var(--bg); border-radius: var(--radius-md);">
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Calculation Results</h3>
+            
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+              <span><strong>Base Amount:</strong></span>
+              <span>₹ <strong id="resultBaseAmount">0.00</strong></span>
+            </div>
+
+            <div id="resultCgstSgstContainer">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                <span>CGST:</span>
+                <span>₹ <strong id="resultCgst">0.00</strong></span>
+              </div>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                <span>SGST:</span>
+                <span>₹ <strong id="resultSgst">0.00</strong></span>
+              </div>
+            </div>
+
+            <div id="resultIgstContainer" style="display: none;">
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+                <span>IGST:</span>
+                <span>₹ <strong id="resultIgst">0.00</strong></span>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.75rem;">
+              <span><strong>Total GST Tax:</strong></span>
+              <span>₹ <strong id="resultTotalGst">0.00</strong></span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; padding-top: 0.75rem; border-top: 2px solid var(--border);">
+              <span><strong>Grand Total:</strong></span>
+              <span style="font-size: 1.2rem; color: var(--primary);">₹ <strong id="resultGrandTotal">0.00</strong></span>
+            </div>
+
+            <button type="button" class="btn btn-accent btn-small" style="margin-top: 1rem; width: 100%; font-weight:600;" onclick="copyResult('resultGrandTotal')" aria-label="Copy Grand Total to Clipboard">📋 Copy Result</button>
+          </div>
         </div>
-        <div class="footer-section">
-          <h3>Quick Links</h3>
-          <a href="index.html">Invoice Generator</a>
-          <a href="gst-calculator.html">GST Calculator</a>
-          <a href="hsn-finder.html">HSN Finder</a>
-          <a href="blog/">Blog</a>
+
+        <!-- Info Section -->
+        <div class="card mt-4">
+          <h3>Understanding CGST, SGST, and IGST</h3>
+          <p><strong>CGST (Central GST):</strong> This is the GST collected by the Central Government. In an intra-state transaction (both parties in the same state), CGST is applied at half of the total GST rate. For example, on an 18% GST rate, CGST is 9%.</p>
+          <p><strong>SGST (State GST):</strong> This is the GST collected by the State Government. Like CGST, in an intra-state transaction, SGST is also applied at half of the total GST rate. So CGST + SGST = total GST.</p>
+          <p><strong>IGST (Integrated GST):</strong> In an inter-state transaction (where the seller and buyer are in different states), the full GST is collected as IGST by the Central Government. No CGST or SGST is levied.</p>
+          <p><strong>Example:</strong> If you buy goods worth ₹1,000 from your state at 18% GST: You pay CGST ₹90 + SGST ₹90 = ₹180 total tax. But if you buy from a different state, you pay IGST ₹180 instead (same amount, but it all goes to central government).</p>
         </div>
-        <div class="footer-section">
-          <h3>Legal</h3>
-          <a href="about.html">About Us</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="disclaimer.html">Disclaimer</a>
-          <a href="contact.html">Contact Us</a>
+
+        <!-- Bottom Ad Slot -->
+        <div class="ad-container" style="margin-top: 2rem;">
+          <!-- AdSense Code will be loaded here dynamically by Google -->
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 InvoiceBana. All rights reserved.</p>
+    </section>
+  </main>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-consent" style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 1rem; text-align: center; box-shadow: var(--shadow-xl); z-index: 2000; display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+    <span>We use cookies for basic site analytics to improve your experience.</span>
+    <button class="btn-accept" style="background: var(--accent); color: white; border: none; padding: 0.5rem 1.25rem; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600;">Accept</button>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="site-footer" style="background-color: var(--text-dark); color: #cbd5e1; padding: 60px 0 20px 0; border-top: 1px solid #1e293b;">
+    <div class="container">
+      <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.4rem;">InvoiceBana</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem;">Providing free, accurate, and secure GST tools for small businesses, freelancers, and startups in India.</p>
+        </div>
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Quick Links</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/" style="color: #cbd5e1; font-weight: 400;">Free Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/gst-calculator" style="color: #cbd5e1; font-weight: 400;">GST Calculator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/hsn-finder" style="color: #cbd5e1; font-weight: 400;">HSN Finder</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/blog" style="color: #cbd5e1; font-weight: 400;">Tax &amp; Billing Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Alternative Tools</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-generator" style="color: #cbd5e1; font-weight: 400;">Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/gst-invoice-generator" style="color: #cbd5e1; font-weight: 400;">GST Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/free-invoice-generator" style="color: #cbd5e1; font-weight: 400;">Free Invoice Maker</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-maker" style="color: #cbd5e1; font-weight: 400;">Invoice Creator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/proforma-invoice-generator" style="color: #cbd5e1; font-weight: 400;">Proforma Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-template" style="color: #cbd5e1; font-weight: 400;">Invoice Templates</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Company &amp; Legal</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/about" style="color: #cbd5e1; font-weight: 400;">About Us</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/privacy-policy" style="color: #cbd5e1; font-weight: 400;">Privacy Policy</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/disclaimer" style="color: #cbd5e1; font-weight: 400;">Disclaimer</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/contact" style="color: #cbd5e1; font-weight: 400;">Contact Us</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/sitemap.xml" style="color: #cbd5e1; font-weight: 400;">Sitemap.xml</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom" style="border-top: 1px solid #1e293b; padding-top: 1.5rem; text-align: center; font-size: 0.9rem; color: #64748b;">
+        <p>&copy; 2026 InvoiceBana. All rights reserved. Indian Businesses GST Utility.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Structured Data for Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://invoicebana.vercel.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "GST Calculator",
+        "item": "https://invoicebana.vercel.app/gst-calculator"
+      }
+    ]
+  }
+  </script>
 
   <!-- Scripts -->
   <script src="js/nav.js"></script>

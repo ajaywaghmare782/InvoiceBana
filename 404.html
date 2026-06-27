@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Page not found - InvoiceBana">
+  <meta name="description" content="Page not found - InvoiceBana. Return to our free GST invoice maker, GST calculators, or browse billing guides.">
   <meta name="robots" content="noindex, follow">
-  <title>404 - Page Not Found - InvoiceBana</title>
+  <meta property="og:title" content="Page Not Found | InvoiceBana">
+  <meta property="og:description" content="The page you are looking for does not exist. Browse our free GST bill makers and compliance calculators.">
+  <meta property="og:image" content="https://invoicebana.vercel.app/assets/og-image.png">
+  
+  <title>404 - Page Not Found | InvoiceBana</title>
   <link rel="stylesheet" href="css/style.css?v=1.4">
-
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1.1">
@@ -15,77 +18,106 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4551792521922995" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav>
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+      <div class="container">
+        <div class="navbar">
+          <a href="/" class="navbar-logo" aria-label="InvoiceBana Home">
+            <img src="favicon.svg?v=1.1" alt="InvoiceBana Logo" class="logo-icon" width="32" height="32"> 
+            InvoiceBana
+          </a>
+          <button class="navbar-toggle" aria-label="Toggle Navigation Menu">☰</button>
+          <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/gst-calculator">GST Calculator</a></li>
+            <li><a href="/hsn-finder">HSN Finder</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- 404 Content -->
+    <section class="section" style="min-height: 65vh; display: flex; align-items: center; padding: 40px 0;">
+      <div class="container" style="text-align: center; max-width: 600px;">
+        <h1 style="font-size: 6rem; color: var(--primary); margin: 0; line-height: 1.1;">404</h1>
+        <h2 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 2.2rem; font-weight: 700;">Page Not Found</h2>
+        <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; line-height: 1.5;">
+          Oops! The page you're looking for doesn't exist or has been moved.
+        </p>
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+          <a href="/" class="btn btn-primary" style="padding: 0.75rem 1.5rem; font-weight: 600;">← Back to Home</a>
+          <a href="/blog" class="btn btn-accent" style="padding: 0.75rem 1.5rem; font-weight: 600; color: white;">Browse Blog</a>
+          <a href="/contact" class="btn btn-secondary" style="padding: 0.75rem 1.5rem; font-weight: 600;">Contact Us</a>
+        </div>
+
+        <div style="padding: 2rem; background-color: var(--surface); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1rem;">Popular Pages</h3>
+          <ul style="list-style: none; padding: 0; margin: 0; text-align: left; display: grid; gap: 0.75rem; justify-content: center;">
+            <li><a href="/invoice-generator" style="color: var(--primary); font-weight: 500;">📋 GST Invoice Generator</a></li>
+            <li><a href="/gst-calculator" style="color: var(--primary); font-weight: 500;">🧮 GST Calculator</a></li>
+            <li><a href="/hsn-finder" style="color: var(--primary); font-weight: 500;">🔍 HSN Code Finder</a></li>
+            <li><a href="/blog" style="color: var(--primary); font-weight: 500;">📚 Blog &amp; Guides</a></li>
+            <li><a href="/about" style="color: var(--primary); font-weight: 500;">ℹ️ About InvoiceBana</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-consent" style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--surface); border-top: 1px solid var(--border); padding: 1rem; text-align: center; box-shadow: var(--shadow-xl); z-index: 2000; display: flex; justify-content: center; align-items: center; gap: 1rem; flex-wrap: wrap;">
+    <span>We use cookies for basic site analytics to improve your experience.</span>
+    <button class="btn-accept" style="background: var(--accent); color: white; border: none; padding: 0.5rem 1.25rem; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600;">Accept</button>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="site-footer" style="background-color: var(--text-dark); color: #cbd5e1; padding: 60px 0 20px 0; border-top: 1px solid #1e293b;">
     <div class="container">
-      <div class="navbar">
-        <div class="navbar-logo"><img src="favicon.svg?v=1.1" alt="Logo" class="logo-icon"> InvoiceBana</div>
-        <button class="navbar-toggle">☰</button>
-        <ul class="navbar-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="gst-calculator.html">GST Calculator</a></li>
-          <li><a href="hsn-finder.html">HSN Finder</a></li>
-          <li><a href="blog/">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- 404 Content -->
-  <section class="section" style="min-height: 60vh; display: flex; align-items: center;">
-    <div class="container" style="text-align: center;">
-      <h1 style="font-size: 6rem; color: var(--primary); margin: 0;">404</h1>
-      <h2 style="color: var(--text-dark); margin-bottom: 1rem;">Page Not Found</h2>
-      <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem;">
-        Oops! The page you're looking for doesn't exist or has been moved.
-      </p>
-      
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="index.html" class="btn btn-primary">← Back to Home</a>
-        <a href="blog/" class="btn btn-accent">Browse Blog</a>
-        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-      </div>
-
-      <div style="margin-top: 3rem; padding: 2rem; background-color: var(--bg); border-radius: 8px;">
-        <h3>Popular Pages</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="margin-bottom: 0.5rem;"><a href="index.html" style="color: var(--primary); text-decoration: none;">📋 Invoice Generator</a></li>
-          <li style="margin-bottom: 0.5rem;"><a href="gst-calculator.html" style="color: var(--primary); text-decoration: none;">🧮 GST Calculator</a></li>
-          <li style="margin-bottom: 0.5rem;"><a href="hsn-finder.html" style="color: var(--primary); text-decoration: none;">🔍 HSN Code Finder</a></li>
-          <li style="margin-bottom: 0.5rem;"><a href="blog/" style="color: var(--primary); text-decoration: none;">📚 Blog & Guides</a></li>
-          <li><a href="about.html" style="color: var(--primary); text-decoration: none;">ℹ️ About InvoiceBana</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
+      <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
         <div class="footer-section">
-          <h3>InvoiceBana</h3>
-          <p>Free GST tools for every Indian business.</p>
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.4rem;">InvoiceBana</h3>
+          <p style="color: #94a3b8; font-size: 0.95rem;">Providing free, accurate, and secure GST tools for small businesses, freelancers, and startups in India.</p>
         </div>
         <div class="footer-section">
-          <h3>Quick Links</h3>
-          <a href="index.html">Invoice Generator</a>
-          <a href="gst-calculator.html">GST Calculator</a>
-          <a href="hsn-finder.html">HSN Finder</a>
-          <a href="blog/">Blog</a>
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Quick Links</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/" style="color: #cbd5e1; font-weight: 400;">Free Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/gst-calculator" style="color: #cbd5e1; font-weight: 400;">GST Calculator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/hsn-finder" style="color: #cbd5e1; font-weight: 400;">HSN Finder</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/blog" style="color: #cbd5e1; font-weight: 400;">Tax &amp; Billing Blog</a></li>
+          </ul>
         </div>
         <div class="footer-section">
-          <h3>Legal</h3>
-          <a href="about.html">About Us</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="disclaimer.html">Disclaimer</a>
-          <a href="contact.html">Contact Us</a>
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Alternative Tools</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-generator" style="color: #cbd5e1; font-weight: 400;">Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/gst-invoice-generator" style="color: #cbd5e1; font-weight: 400;">GST Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/free-invoice-generator" style="color: #cbd5e1; font-weight: 400;">Free Invoice Maker</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-maker" style="color: #cbd5e1; font-weight: 400;">Invoice Creator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/proforma-invoice-generator" style="color: #cbd5e1; font-weight: 400;">Proforma Invoice Generator</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/invoice-template" style="color: #cbd5e1; font-weight: 400;">Invoice Templates</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 style="color: white; margin-bottom: 1rem; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 0.05em;">Company &amp; Legal</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="/about" style="color: #cbd5e1; font-weight: 400;">About Us</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/privacy-policy" style="color: #cbd5e1; font-weight: 400;">Privacy Policy</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/disclaimer" style="color: #cbd5e1; font-weight: 400;">Disclaimer</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/contact" style="color: #cbd5e1; font-weight: 400;">Contact Us</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="/sitemap.xml" style="color: #cbd5e1; font-weight: 400;">Sitemap.xml</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 InvoiceBana. All rights reserved.</p>
+      <div class="footer-bottom" style="border-top: 1px solid #1e293b; padding-top: 1.5rem; text-align: center; font-size: 0.9rem; color: #64748b;">
+        <p>&copy; 2026 InvoiceBana. All rights reserved. Indian Businesses GST Utility.</p>
       </div>
     </div>
   </footer>
