@@ -620,12 +620,13 @@ textarea {
 /* ==========================================================================
    FOOTER
    ========================================================================== */
-footer {
-  background-color: #0b0f19;
-  color: #94a3b8;
+footer, .site-footer {
+  background-color: var(--surface) !important;
+  color: var(--text-muted) !important;
   padding: 5rem 0 2rem;
   margin-top: 6rem;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--border) !important;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 .footer-content {
@@ -636,20 +637,22 @@ footer {
 }
 
 .footer-section h3 {
-  color: white;
+  color: var(--text-dark) !important;
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
   font-size: 1.35rem;
   margin-bottom: 1.25rem;
+  transition: color var(--transition-normal);
 }
 
 .footer-section p {
-  color: #64748b;
+  color: var(--text-muted) !important;
   font-size: 0.95rem;
+  transition: color var(--transition-normal);
 }
 
 .footer-section a {
-  color: #94a3b8;
+  color: var(--text-muted) !important;
   display: block;
   margin-bottom: 0.75rem;
   font-size: 0.95rem;
@@ -658,24 +661,29 @@ footer {
 }
 
 .footer-section a:hover {
-  color: var(--primary);
+  color: var(--primary) !important;
   transform: translateX(3px);
 }
 
 .footer-bottom {
-  border-top: 1px solid #1f2937;
+  border-top: 1px solid var(--border) !important;
   padding-top: 1.5rem;
   text-align: center;
-  color: #64748b;
+  color: var(--text-muted) !important;
   font-size: 0.85rem;
+  transition: border-color var(--transition-normal), color var(--transition-normal);
+}
+
+.footer-bottom p {
+  color: var(--text-muted) !important;
 }
 
 .footer-bottom a {
-  color: #94a3b8;
+  color: var(--text-muted) !important;
 }
 
 .footer-bottom a:hover {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 @media (max-width: 768px) {
@@ -683,7 +691,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  footer {
+  footer, .site-footer {
     padding: 3rem 0 1.5rem;
   }
 }
