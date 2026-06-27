@@ -1297,6 +1297,41 @@ body.dark-mode .benefits-section::before {
   line-height: 1.6;
 }
 
+/* Section 3: Who Can Use Grid & Card Styles */
+.who-can-use-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.who-can-use-card {
+  background-color: var(--bg);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border-top: 4px solid var(--accent);
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.who-can-use-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--primary);
+}
+
+@media (min-width: 992px) {
+  .who-can-use-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .who-can-use-card {
+    flex: 0 1 calc(25% - 1.5rem);
+  }
+}
+
 /* Grids - using flex for centering the bottom row automatically */
 .steps-grid,
 .benefits-grid {
