@@ -1227,3 +1227,293 @@ body.dark-mode .ad-container::before {
   background-color: var(--bg);
 }
 
+/* ==========================================================================
+   PREMIUM ADAPTIVE SECTIONS (HOW IT WORKS & BENEFITS)
+   ========================================================================== */
+
+/* Section Outer Styles */
+.how-it-works-section {
+  background-color: var(--bg);
+  color: var(--text-dark);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.benefits-section {
+  background-color: var(--surface);
+  color: var(--text-dark);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Background glows for a rich, modern, glassmorphic feel - visible in dark mode, extremely subtle in light mode */
+.how-it-works-section::before,
+.benefits-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.03) 0%, rgba(99, 102, 241, 0.03) 50%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+body.dark-mode .how-it-works-section::before,
+body.dark-mode .benefits-section::before {
+  background: radial-gradient(circle, rgba(52, 211, 153, 0.06) 0%, rgba(129, 140, 248, 0.06) 50%, transparent 100%);
+}
+
+.how-it-works-section .container,
+.benefits-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Titles and Subtitles */
+.how-it-works-section .section-title,
+.benefits-section .section-title {
+  color: var(--text-dark);
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.how-it-works-section .section-subtitle,
+.benefits-section .section-subtitle {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+  line-height: 1.6;
+}
+
+/* Grids - using flex for centering the bottom row automatically */
+.steps-grid,
+.benefits-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards styling */
+.step-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 3rem 1.75rem 2.25rem 1.75rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-card {
+  flex: 1 1 300px;
+  max-width: 350px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 2.25rem 2rem;
+  position: relative;
+  text-align: left;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-sm);
+}
+
+body.dark-mode .step-card {
+  background: linear-gradient(145deg, #111827, #0b0f19);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .benefit-card {
+  background: linear-gradient(145deg, #111827, #0b0f19);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Step Card Hover Glow */
+.step-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.1), var(--shadow-lg);
+}
+
+body.dark-mode .step-card:hover {
+  border-color: rgba(52, 211, 153, 0.35);
+  box-shadow: 0 20px 40px rgba(52, 211, 153, 0.08), 0 0 0 1px rgba(52, 211, 153, 0.2);
+}
+
+/* Benefit Card Hover Glow */
+.benefit-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1), var(--shadow-lg);
+}
+
+body.dark-mode .benefit-card:hover {
+  border-color: rgba(129, 140, 248, 0.35);
+  box-shadow: 0 20px 40px rgba(129, 140, 248, 0.08), 0 0 0 1px rgba(129, 140, 248, 0.2);
+}
+
+/* Step Numbers */
+.step-number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  border: 4px solid var(--bg);
+  transition: all 0.3s ease;
+}
+
+.step-card:hover .step-number {
+  transform: translate(-50%, -55%) scale(1.1);
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
+}
+
+/* Icon Containers */
+.step-icon-circle {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: rgba(var(--primary-rgb), 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem auto;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover .step-icon-circle {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  transform: scale(1.05);
+}
+
+.benefit-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(99, 102, 241, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .benefit-icon-circle {
+  background: rgba(129, 140, 248, 0.15);
+}
+
+.benefit-card:hover .benefit-icon-circle {
+  background: rgba(99, 102, 241, 0.2);
+  transform: scale(1.08);
+}
+
+body.dark-mode .benefit-card:hover .benefit-icon-circle {
+  background: rgba(129, 140, 248, 0.25);
+}
+
+/* Titles Inside Cards */
+.step-card-title {
+  color: var(--text-dark) !important;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+}
+
+.benefit-card-title {
+  color: var(--accent) !important;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+/* Green divider under step card titles */
+.step-divider {
+  width: 24px;
+  height: 3px;
+  background: var(--primary);
+  margin: 0.75rem auto 1.25rem auto;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.step-card:hover .step-divider {
+  width: 40px;
+}
+
+/* Descriptions */
+.step-card-desc,
+.benefit-card-desc {
+  color: var(--text-muted) !important;
+  font-size: 0.925rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* PDF Badge overlay */
+.pdf-badge {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--primary);
+  color: #ffffff;
+  font-size: 8px;
+  font-weight: 800;
+  padding: 1px 4px;
+  border-radius: 3px;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for spacing and grid adjustments */
+@media (max-width: 768px) {
+  .how-it-works-section,
+  .benefits-section {
+    padding: 70px 0;
+  }
+  .how-it-works-section .section-title,
+  .benefits-section .section-title {
+    font-size: 2rem;
+  }
+  .how-it-works-section .section-subtitle,
+  .benefits-section .section-subtitle {
+    margin-bottom: 3rem;
+  }
+  .steps-grid,
+  .benefits-grid {
+    gap: 2rem;
+  }
+}
+

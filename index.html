@@ -504,65 +504,171 @@
     </div>
   </section>
 
-  <!-- Section 4: How to Generate an Invoice -->
-  <section class="section" style="background-color: var(--bg);">
+  <!-- Section 4: How It Works -->
+  <section class="section how-it-works-section" id="how-it-works">
     <div class="container">
-      <h2 class="text-center mb-4">How to Generate an Invoice Online</h2>
-      <p class="text-center mb-5" style="max-width: 600px; margin: 0 auto 3rem auto;">Follow these simple steps to create your professional, GST-compliant PDF invoice in seconds:</p>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; max-width: 1000px; margin: 0 auto;">
-        <div style="text-align: center; padding: 1.5rem;">
-          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">1</div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Enter Business Info</h3>
-          <p style="font-size: 0.9rem;">Fill in your business name, address, GSTIN, contact details, and state.</p>
+      <h2 class="text-center section-title">How It Works</h2>
+      <p class="text-center section-subtitle">Create professional GST invoices in just a few simple steps.</p>
+      
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <div class="step-icon-circle">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 10L5 4H19L22 10" stroke="var(--primary)" />
+              <path d="M4 10V20C4 20.55 4.45 21 5 21H19C19.55 21 20 20.55 20 20V10" />
+              <path d="M9 21V14C9 13.45 9.45 13 10 13H14C14.55 13 15 13.45 15 14V21" stroke="var(--primary)" />
+              <path d="M6 10H18" />
+            </svg>
+          </div>
+          <h3 class="step-card-title">Enter Business Info</h3>
+          <div class="step-divider"></div>
+          <p class="step-card-desc">Fill in your business name, address, GSTIN, contact details, and state.</p>
         </div>
-        <div style="text-align: center; padding: 1.5rem;">
-          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">2</div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Add Customer Details</h3>
-          <p style="font-size: 0.9rem;">Input the buyer's name, billing address, state, and optional GSTIN.</p>
+        
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <div class="step-icon-circle">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="10" cy="8" r="4" />
+              <path d="M3 20c0-3.3 2.7-6 6-6h2c3.3 0 6 2.7 6 6" />
+              <line x1="18" y1="9" x2="22" y2="9" stroke="var(--primary)" />
+              <line x1="18" y1="13" x2="22" y2="13" stroke="var(--primary)" />
+              <line x1="16" y1="17" x2="22" y2="17" stroke="var(--primary)" />
+            </svg>
+          </div>
+          <h3 class="step-card-title">Add Customer Details</h3>
+          <div class="step-divider"></div>
+          <p class="step-card-desc">Input the buyer's name, billing address, state, and optional GSTIN.</p>
         </div>
-        <div style="text-align: center; padding: 1.5rem;">
-          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">3</div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Add Products &amp; Prices</h3>
-          <p style="font-size: 0.9rem;">List descriptions, HSN codes, quantity, units, rates, and GST rates for items.</p>
+        
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <div class="step-icon-circle">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 3L3 7v10l7 4 7-4V7l-7-4z" />
+              <path d="M10 21V11" />
+              <path d="M10 11L3 7" />
+              <path d="M10 11l7-4" />
+              <line x1="16" y1="12" x2="21" y2="12" stroke="var(--primary)" />
+              <line x1="16" y1="15" x2="21" y2="15" stroke="var(--primary)" />
+              <line x1="16" y1="18" x2="19" y2="18" stroke="var(--primary)" />
+            </svg>
+          </div>
+          <h3 class="step-card-title">Add Products &amp; Prices</h3>
+          <div class="step-divider"></div>
+          <p class="step-card-desc">List descriptions, HSN codes, quantity, units, rates, and GST rates for items.</p>
         </div>
-        <div style="text-align: center; padding: 1.5rem;">
-          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">4</div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Calculate Taxes</h3>
-          <p style="font-size: 0.9rem;">The generator will split GST into CGST/SGST or IGST based on the state selection.</p>
+        
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <div class="step-icon-circle">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="3" width="16" height="18" rx="2" />
+              <rect x="7" y="6" width="10" height="4" stroke="var(--primary)" />
+              <path d="M7 13h2M11 13h2M15 13h2" stroke="var(--primary)" />
+              <path d="M7 17h2M11 17h2M15 17h2" />
+            </svg>
+          </div>
+          <h3 class="step-card-title">Calculate Taxes</h3>
+          <div class="step-divider"></div>
+          <p class="step-card-desc">The generator will split GST into CGST/SGST or IGST based on the state selection.</p>
         </div>
-        <div style="text-align: center; padding: 1.5rem;">
-          <div style="width: 50px; height: 50px; line-height: 50px; background-color: var(--primary); color: white; border-radius: 50%; font-size: 1.5rem; font-weight: 700; margin: 0 auto 1rem auto;">5</div>
-          <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Download PDF</h3>
-          <p style="font-size: 0.9rem;">Preview the document structure, click "Download PDF", and save it instantly.</p>
+        
+        <!-- Step 5 -->
+        <div class="step-card">
+          <div class="step-number">5</div>
+          <div class="step-icon-circle" style="position: relative;">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="var(--text-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+            </svg>
+            <span class="pdf-badge">PDF</span>
+          </div>
+          <h3 class="step-card-title">Download PDF</h3>
+          <div class="step-divider"></div>
+          <p class="step-card-desc">Preview the document structure, click "Download PDF", and save it instantly.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Section 5: Benefits -->
-  <section class="section" style="background-color: var(--surface);">
+  <section class="section benefits-section" id="benefits">
     <div class="container">
-      <h2 class="text-center mb-4">Benefits of Using InvoiceBana</h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
-        <div class="card" style="box-shadow: var(--shadow-md);">
-          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Save Valuable Time</h3>
-          <p>By automating calculations and layouts, you can issue professional invoices in under a minute, freeing up hours to focus on growing your business operations.</p>
+      <h2 class="text-center section-title">Benefits of Using InvoiceBana</h2>
+      <p class="text-center section-subtitle">Our invoice generator is designed to save you time, reduce errors, and help you focus on growing your business.</p>
+      
+      <div class="benefits-grid">
+        <!-- Benefit 1 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <polyline points="12 6 12 12 16 14" />
+            </svg>
+          </div>
+          <h3 class="benefit-card-title">Save Valuable Time</h3>
+          <p class="benefit-card-desc">By automating calculations and layouts, you can issue professional invoices in under a minute, freeing up hours to focus on growing your business operations.</p>
         </div>
-        <div class="card" style="box-shadow: var(--shadow-md);">
-          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Reduce Costly Mistakes</h3>
-          <p>Manual tax calculations often result in CGST/SGST errors. Automated math guarantees zero discrepancies, keeping your bookkeeping clean and GSTR-1 preparation stress-free.</p>
+        
+        <!-- Benefit 2 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="3" width="14" height="18" rx="2" />
+              <line x1="8" y1="7" x2="16" y2="7" />
+              <line x1="8" y1="12" x2="10" y2="12" />
+              <line x1="14" y1="12" x2="16" y2="12" />
+              <line x1="8" y1="16" x2="10" y2="16" />
+              <line x1="14" y1="16" x2="16" y2="16" />
+            </svg>
+          </div>
+          <h3 class="benefit-card-title">Reduce Costly Mistakes</h3>
+          <p class="benefit-card-desc">Manual tax calculations often result in CGST/SGST errors. Automated math guarantees zero discrepancies, keeping your bookkeeping clean and GSTR-1 preparation stress-free.</p>
         </div>
-        <div class="card" style="box-shadow: var(--shadow-md);">
-          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Professional Invoices</h3>
-          <p>A well-structured invoice featuring a neat table, terms, notes, and proper tax breakdown shows clients that you run a professional and compliant business setup.</p>
+        
+        <!-- Benefit 3 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
+          </div>
+          <h3 class="benefit-card-title">Professional Invoices</h3>
+          <p class="benefit-card-desc">A well-structured invoice featuring a neat table, terms, notes, and proper tax breakdown shows clients that you run a professional and compliant business setup.</p>
         </div>
-        <div class="card" style="box-shadow: var(--shadow-md);">
-          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Easy Bookkeeping</h3>
-          <p>PDF downloads let you store invoices organized by numbers or dates. This simplifies audits, filing tax returns, and tracking pending collections.</p>
+        
+        <!-- Benefit 4 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z" />
+            </svg>
+          </div>
+          <h3 class="benefit-card-title">Easy Bookkeeping</h3>
+          <p class="benefit-card-desc">PDF downloads let you store invoices organized by numbers or dates. This simplifies audits, filing tax returns, and tracking pending collections.</p>
         </div>
-        <div class="card" style="box-shadow: var(--shadow-md);">
-          <h3 style="font-size: 1.3rem; color: var(--accent); margin-bottom: 0.5rem;">Better Customer Trust</h3>
-          <p>Transparent billing with line-item breakdowns, accurate GSTINs, and states builds buyer confidence, leading to prompt clearings and strong long-term relationships.</p>
+        
+        <!-- Benefit 5 -->
+        <div class="benefit-card">
+          <div class="benefit-icon-circle">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <h3 class="benefit-card-title">Better Customer Trust</h3>
+          <p class="benefit-card-desc">Transparent billing with line-item breakdowns, accurate GSTINs, and states builds buyer confidence, leading to prompt clearings and strong long-term relationships.</p>
         </div>
       </div>
     </div>
